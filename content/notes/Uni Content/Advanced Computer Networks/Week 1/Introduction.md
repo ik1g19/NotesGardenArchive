@@ -1,0 +1,36 @@
+---
+title: "Introduction"
+---
+
+- **Shannon Information**
+    - Shannon Entropy ↓ 
+        - $h(x)=-\log_2 p(x)$
+            - Where
+                - $p(x)$ - the probability of $x$
+                - $-\log_2 x$ for $x<1$
+![](local://C:/Users/isaac/remnote/remnote-615c4b5e9f997400356d29fa/files/O8YYJ5wHrnJb27SggsdMUT8U2rTut3nYLLJBWNFuJBrupEZRoAHsvCIBGeSVjtDpwPiB2Mni4tUhcBsPnzqm8dH5rvkxPwotMHURBLTFvxB5eWz1vOpJt7QRfN7gJhoY.png) 
+    - Information Entropy ↓ 
+        - The average amount of information transmitted for a series of values
+        - $H(x)=-\sum\limits_x p(x)\log_2 p(x)$ 
+        - Example
+            - Consider random variable $x$ which has 8 possible values, each of which equally likely
+            - $H(x)=-8\times\frac{1}{8}\log_2\frac{1}{8}=3\text{ bits}$
+            - This makes sense as 3 bits are needed to represent all states
+                - 000,001,010,011,100,101,110,111 
+            - So this data stream only needs 3 bits per sample to represent all the information
+            - Non-Uniform Distributions
+                - ![](local://C:/Users/isaac/remnote/remnote-615c4b5e9f997400356d29fa/files/6BdR5cJfPnF2BVyGp-YWAOx-E2dUzI4J0D5KGs0E603xV98wMJHyjANO2vH0-lBM7TbSPf9693mmOj40LcOxqFl91QU4OVIReocy0YbQUdFLqvH4HCRAwHZ_H9PCxi9y.png) 
+        - Compact Representations
+            - Non-uniform probabilities allow us to use a more compact representation
+                - Shannon's figure is the {{lower}} bound we can aim for
+                    - Use {{more}} bits for the higher information states
+            - Example
+                - ![](local://C:/Users/isaac/remnote/remnote-615c4b5e9f997400356d29fa/files/w6RpP5KOdsOEC6f5JL0XvwVnHdLqAJ2orEp4AMXOwMNHlZ7kg5EWjr72N0e-iw_y_QX56-4besiHqBxEc_LLNYoCCFE2FAI1zlasmAQ4XoCTxJ13_aVl2aErh_YEsmNx.png) 
+    - The less likely a value, {{the more information is imparted by revealing its value}} 
+        - If we learn two independent facts, we can sum all the $h$ values, since information is additive ↓ 
+            - $p(x,y)=p(x)p(y)$
+            - $h(x,y)=h(x)+h(y)$
+    - Information theory begun with the publication of Claude Shannon's work
+        - "A Mathematical Theory of Communication"
+    - The Degree of Surprise↔Shannon proposed a measure of information that considers a discrete random variable and asks how much information is received when we observe a specific value for this variable
+- 
