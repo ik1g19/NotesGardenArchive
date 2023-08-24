@@ -15,10 +15,8 @@ Wavelets are used for:
 ## 2D Gabor Filter
 
 $$g w 2 D(x, y)=\frac{1}{\sqrt{\pi \sigma^2}} e^{-\left(\frac{\left(x-x_0\right)^2+\left(y-y_0\right)^2}{2 \sigma^2}\right)} e^{-i 2 \pi \pi_0\left(\left(x-x_0\right) \cos \theta+\left(y-y_0\right) \sin \theta\right)}$$
-$$\begin{array}{ll}
--x_0, y_0 \text { - central position } & -\theta \text { - orientatio } \mathrm{n} \text { of the wavelet } \\
--f_0  \text { - central frequency } & -\sigma \text { - width of the wavelet }
-\end{array}$$
+
+$$\begin{array}{ll}-x_0, y_0 \text { - central position } & -\theta \text { -orientatio } \mathrm{n} \text { of the wavelet } \\-f_0  \text { - central frequency } & -\sigma \text { - width of the wavelet }\end{array}$$
 
 #### Applications of Gabor Wavelets
 1. Texture Modelling and Analysis
@@ -65,54 +63,20 @@ Best way to find an edge is to take derivatives
 1. Detect local maxima of first derivative
 2. Detect the zero-crossing of the second derivative
 
-$$
-\frac{\partial I}{\partial x} \approx I(x+1, y)-I(x, y) \rightarrow
-\begin{array}{|l|l|}
-\hline-1 & 1 \\
-\hline
-\end{array}$$
+$$\frac{\partial I}{\partial x} \approx I(x+1, y)-I(x, y) \rightarrow\begin{array}{|l|l|}\hline-1 & 1 \\\hline\end{array}$$
 
-$$\frac{\partial I}{\partial y} \approx I(x, y+1)-I(x, y) \rightarrow
-\begin{array}{|c|}
-\hline-1 \\
-\hline 1 \\
-\hline
-\end{array}$$
+$$\frac{\partial I}{\partial y} \approx I(x, y+1)-I(x, y) \rightarrow\begin{array}{|c|}\hline-1 \\\hline 1 \\\hline\end{array}$$
 
 By convolving these masks with the original image the partial derivatives can be calculated
 
 ## Prewitt Masks
-$$
-\begin{array}{|c|c|c|}
-\hline-1 & -1 & -1 \\
-\hline 0 & 0 & 0 \\
-\hline 1 & 1 & 1 \\
-\hline
-\end{array}
-\hspace{1em}
-\begin{array}{|c|c|c|}
-\hline-1 & 0 & 1 \\
-\hline-1 & 0 & 1 \\
-\hline-1 & 0 & 1 \\
-\hline
-\end{array}$$
+
+$$\begin{array}{|c|c|c|}\hline-1 & -1 & -1 \\\hline 0 & 0 & 0 \\\hline 1 & 1 & 1 \\\hline\end{array}\hspace{1em}\begin{array}{|c|c|c|}\hline-1 & 0 & 1 \\\hline-1 & 0 & 1 \\\hline-1 & 0 & 1 \\\hline\end{array}$$
 
 ## Sobel Masks
 Smooths the image before edge detection
 
-$$\begin{array}{|c|c|c|}
-\hline-1 & -2 & -1 \\
-\hline 0 & 0 & 0 \\
-\hline 1 & 2 & 1 \\
-\hline
-\end{array}
-\hspace{1em}
-\begin{array}{|c|c|c|}
-\hline-1 & 0 & 1 \\
-\hline-2 & 0 & 2 \\
-\hline-1 & 0 & 1 \\
-\hline
-\end{array}$$
+$$\begin{array}{|c|c|c|}\hline-1 & -2 & -1 \\\hline 0 & 0 & 0 \\\hline 1 & 2 & 1 \\\hline\end{array}\hspace{1em}\begin{array}{|c|c|c|}\hline-1 & 0 & 1 \\\hline-2 & 0 & 2 \\\hline-1 & 0 & 1 \\\hline\end{array}$$
 
 ![|400](notes/Uni%20Content/Biometrics/Images/Pasted%20image%2020230224221833.png)
 

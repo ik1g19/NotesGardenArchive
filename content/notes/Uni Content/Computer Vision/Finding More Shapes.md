@@ -2,7 +2,7 @@
 title: Finding More Shapes
 ---
 
-# Hough Transform for Circles
+# [[Hough]] Transform for Circles
 Has duality, similar to line equations
 OR
 Points x_0,y_0

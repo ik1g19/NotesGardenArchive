@@ -37,7 +37,7 @@ Production algorithms need to be fast
 Intelligent use of colour
 - Colour can help detect if something is wrong
 Simple, but incredibly fast algorithms
-- Hough transform is popular
+- [[Hough]] transform is popular
 # Colour-Spaces
 There are many ways of numerically representing colour
 - A single representation of all possible colours is called a colour-space
