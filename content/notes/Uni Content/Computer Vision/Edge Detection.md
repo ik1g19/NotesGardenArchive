@@ -11,12 +11,12 @@ An edge is contrast
 ## Horizontal Differencing
 ![|400](https://remnote-user-data.s3.amazonaws.com/Sa8mSnJnkV2ZXL2zukAk2NJ48CkAsVfXT26AbQW7WhZ_ozP47Gq18_KSXeaPdT_uyQY4twh2mVwVnpxAoB4Tn6ylx7xGvt9q7W7_BpO0o3NyDz7zJAuac64Sg2NOkQWd.png) 
 Detects vertical edges
-Horizontal Differencing→Calculates the difference between the current point and the point to the right
+Horizontal Differencing - Calculates the difference between the current point and the point to the right
 ## Vertical DIfferencing
 ![|400](https://remnote-user-data.s3.amazonaws.com/KLpQ4LDR9hc-RLSaOJKxY5KFWQz0-cr8yKdOS32FTFAPqattzNHRv_g8aC9X7kimWt40krDjNDOjxRS4NlXOuLF4TobPGMmSNbMOlt34OL7d5jdfzjf7ZCMM1-etUY2r.png) 
 Detects horizontal edges
-Vertical Differencing→Calculates the difference between the current point and the point below
-## First order edge detection
+Vertical Differencing - Calculates the difference between the current point and the point below
+## First order Edge Detection
 The addition of the horizontal and vertical differences
 ![|400](https://remnote-user-data.s3.amazonaws.com/l9zVepydsn9hP4GKSf0Uqi7xY5550MlTCWm-0fpJIndWKodBjMJ0S3e3j5t4rhkCxb5J6pbEuAhwBpdShuSbjj6BouZ5x1HQaQES0esiqu5p4LmACTYIrvDSqWnkZvlf.png) 
 ## Vertical Edge Formula
@@ -37,7 +37,7 @@ In code this looks like
 ![|400](https://remnote-user-data.s3.amazonaws.com/l9zVepydsn9hP4GKSf0Uqi7xY5550MlTCWm-0fpJIndWKodBjMJ0S3e3j5t4rhkCxb5J6pbEuAhwBpdShuSbjj6BouZ5x1HQaQES0esiqu5p4LmACTYIrvDSqWnkZvlf.png) 
 
 # Taylor Series
-Used to approximate a function at a point further than where we currently are
+[[Taylor Series]] - Used to approximate a function at a point further than where we currently are
 ## Formula
 $f(t+\Delta t)=f(t)+f'(t)\Delta t+\frac{f''(t)}{2!}(\Delta t)^2 +\frac{f'''(t)}{3!}(\Delta t)^3+...+\frac{f^n(t)}{n!}(\Delta t)^n$  
 
@@ -72,8 +72,8 @@ $$Ex_{x,y}=|P_{x+1,y}-P_{x-1,y}|  $$
 $$M=\sqrt{{M_x}^2+{M_y}^2}$$
 #### Direction $\theta$
 $$\theta=\tan^{-1}(\frac{M_y}{M_x})$$
-# Templates for 3x3 Prewitt Operator
-Averaging the improved horizontal and vertical operators over 3 rows/columns gives Prewitt templates
+# Templates for 3x3 [[Prewitt Operator]]
+Averaging the improved horizontal and vertical operators over 3 rows/columns gives [[Prewitt]] templates
 ## Mx
 ![|400](https://remnote-user-data.s3.amazonaws.com/uLRzJCjzIwk41eoGZwEOt6rphTD7ITDJzBlit3ZP9HVByif789uRNK8E1OdY5s-mizPasi5h9tG-KOVPd0sqYV213LHIEAUTmsD9r0xaN6iZyLrvNebVY1Cm7oQbS4kG.png) 
 ## My
@@ -86,7 +86,9 @@ The edge magnitude and direction is calculated for the centre point
 ![|400](https://remnote-user-data.s3.amazonaws.com/8LTigPhz30YwIJ9GJxQbC-mPxIuxWO7MXmwScK5rMvBBL-0A1OS4dOvydILmc99gfLgZBGa-7NRyJQrdrCHluJc1IRJa_Y0EvAo6fTYoU_o7qX4tz6QZnH5thLaawnAm.png) 
 ## Edge Magnitude
 Blurred edges
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/oA2rz975pYs27E--6qIumtOkqRbNevIN2wCNE_8g2hcNoQ1oe2mfOYRVTtxbDgpKPD602hnwp5JIIbs4cYHLJgr6CYxraiQbVWFP3_pEr26_TT9vojhjUhs2Zm7n2_wu.png) 
+
 No double points
 No missing points in the corner, unlike before
 ## Vector Format
@@ -95,9 +97,9 @@ No missing points in the corner, unlike before
 ![|400](https://remnote-user-data.s3.amazonaws.com/TAowEoFGhOlLPNay9atPmct9XZ93KUem7mOUdrna7fVkN9HZ22-g4AwOuDoqzOGc04SWS2c3JPkFh8jSRz8suVAH2XylfJP1ZJgJF7b8hyGz2_j_wV4LQhZVLh-CnPDK.png) 
 
 # Templates for Sobel Operator
-Sobel is the most popular basic operator
-It is an improvement of the Prewitt operator
-Double the centre coefficients of the Prewitt operator
+[[Sobel]] is the most popular basic operator
+It is an improvement of the [[Prewitt Operator]]
+Double the centre coefficients of the [[Prewitt Operator]]
 ## Mx
 ![|400](https://remnote-user-data.s3.amazonaws.com/6LPbR-I4CmNhYGxcAzTUB_qZQwLi2gI4wnWlREmwh2fNBoXbQ0vTDaXmWeiOKrhVmjqHGCcAgFWsOFvxfAJuDu5t7X5O6MSQDxdhCMypQu4D6Y6-74wfC-BIHVRFLvCq.png) 
 # My

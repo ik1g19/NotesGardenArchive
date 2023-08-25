@@ -2,16 +2,19 @@
 title: Further Edge Detection
 ---
 
-Sobel is a good basic operator but has blurred and noisy edges
+[[Sobel]] is a good basic operator but has blurred and noisy edges
 # Canny Edge Detection Operator
 ## Stages in Canny Edge Detection
 1. Gaussian Smoothing
-2. Sobel Edge Detection
+2. [[Sobel]] [[keywords/Edge Detection|Edge Detection]]
 3. Non-maximum Suppression
-4. Hysteresis Thresholding
+4. Hysteresis [[Thresholding]]
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/I_9Ei80WT3SUadCSbOGikQxLEc-FLZzWFWaTdTNHsq2dV03Lu2YZ8sGOsmrdwouKMyTs2YEh_Qb--fpD8wNWA46w6UKk8655Ey8AXJOschZr7XrfNOyEg-LH0uOcKHFm.png)  
-### ![|400](https://remnote-user-data.s3.amazonaws.com/I_9Ei80WT3SUadCSbOGikQxLEc-FLZzWFWaTdTNHsq2dV03Lu2YZ8sGOsmrdwouKMyTs2YEh_Qb--fpD8wNWA46w6UKk8655Ey8AXJOschZr7XrfNOyEg-LH0uOcKHFm.png)
-Canny gives thin edges in the correct places, but is a more complex process
+
+![|400](https://remnote-user-data.s3.amazonaws.com/I_9Ei80WT3SUadCSbOGikQxLEc-FLZzWFWaTdTNHsq2dV03Lu2YZ8sGOsmrdwouKMyTs2YEh_Qb--fpD8wNWA46w6UKk8655Ey8AXJOschZr7XrfNOyEg-LH0uOcKHFm.png)
+
+[[Canny]] gives thin edges in the correct places, but is a more complex process
 ## Objectives of the Canny operator
 Optimal detection with no spurious responses (no responses to noise)
 Single response to a single edge
@@ -27,7 +30,9 @@ The objectives made the operator un-implementable, so a set of approximations ar
 Uses linear interpolation, as you need to use points which are not on the image grid
 # Hysteresis Thresholding Transfer Function
 Has an upper and a lower threshold, for when the value is increasing or decreasing respectively
-Thresholding with memory
+
+[[Thresholding]] with memory
+
 Hysteresis thresholding takes into account that if you have found an edge, then you are likely to find another edge next to it, so the threshold for what is considered an edge decreases
 ![|400](https://remnote-user-data.s3.amazonaws.com/HpgegWKU6TetnzHqRvYmMn7hBM1AzyEv8z_MJ5Jf515Wc-1RBuVnd_ebVQ4Hs5ijtnNzddfEMmvVJiG0zIcCOFUIDIl4C96im7pMeDx6uXAC2E8WqOUi-bYuPChVFxLh.png) 
 How does it work

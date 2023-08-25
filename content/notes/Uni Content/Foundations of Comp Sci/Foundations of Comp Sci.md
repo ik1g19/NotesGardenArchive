@@ -5,3 +5,98 @@ title: "Foundations of Comp Sci"
 
 
 <iframe src="https://drive.google.com/file/d/1Li4jiD4QE1MnBID5KSZzVICuES7O0BYQ/preview" width="640" height="780" allow="autoplay"></iframe>
+
+# Contents
+
+- P1. Sets
+- P4. Operations on Sets
+	- P4. Predicates
+- P5. Set Theory
+	- P5. Associative
+	- P5. Commutative
+	- P6. Counter Examples
+	- P6. Relating Sets
+	- P7. Equal Sets
+	- P11. Ordered Pairs
+	- P11. Cartesian Product
+	- P13. Sum (Disjoint Union)
+	- P14. Functions between Sets
+- P17. Functions of Several Variables
+	- P19. Composition
+	- P21. Injective Functions
+	- P21. Surjective Functions
+	- P22. Bijective Functions
+	- P22. Isomorphism Theorem
+- P23. Relations
+	- P26. Equivalence Relations
+	- P29. Powersets
+	- P32. Infinities
+- P36. Propositional Logic
+	- P36. Formulas
+	- P37. Backus Naur Form
+- P40. Semantics
+	- P40. Truth Tables
+	- P42. Tautologies
+	- P42 Semantic Entailment
+	- P46. Soundness
+	- P46. Completeness
+	- P46. Proofs in Natural Deduction
+	- P47. Rules for Conjunction
+	- P48. Rules for Implication
+	- P49. Rules for Negation
+	- P50. Rules for Disjunction
+	- P51. Rules for False
+	- P55. Proving Soundness
+	- P60. Semantics of Predicate Logic
+	- P61. BNF for Predicate Logic
+	- P61. Semantics of Predicate Logic
+- P62. Linear Algebra
+	- P63. Matrices
+	- P64. Matrix Operations
+	- P65. Adding and Subtracting Matrices
+	- P66. Multiplying Matrices by Scalars
+	- P66. Zero Matrix
+	- P67. Matrix Multiplication
+	- P68. The Identity Matrix
+	- P70. Matrix Transposition
+	- P71. Storing and Accessing Data using a Matrix
+	- P75. Finding Communities
+	- P78. Transforming Vectors
+	- P79. Vectors in Linear Algebra
+	- P82. Linear Transformation
+	- P85. Using the Dot Product to find the angle between Vectors
+	- P88. Solving System of Equations by Gaussian Elimination
+	- P89. Matrix Representation of Systems of Equations
+	- P92. Solutions to Linear Equations using Gaussian Elimination
+	- P93. Row Replacement as Matrix Multiplication
+	- P96. Row Interchange as Matrix Multiplication
+	- P97. Linear Independence and Vector Spaces
+	- P101. Eigenvalues and Eigenvectors
+	- P103. The Determinant
+	- P106. Linear Dependenc of Vectors Obtained by Matrix Action
+	- P112. Finding the Eigenvectors and Eigenvalues of a 2x2 Matrix
+	- P116. Eigenvectors and Eigenvalues of a 3x3 Matrix
+	- P122. Inverse Matrices, Column Space and Null Space
+	- P124. Computing the Inverse of a Matrix
+- P127. Combinatorics
+	- P127. Pigeonhole Principle
+	- P127. Fibonacci Series and Recursion
+	- P128. Proof by Induction
+	- P132. Permutations
+	- P135. Binomial Expansion
+	- P135. Vandermonde Identity
+	- P136. Probability
+		- P137. Mutually Exclusive and Independent Events
+		- P137. Random Variables and Values
+		- P138. Joint and Marginal Distribution
+		- P139. Conditional Probability
+		- P139. Bayes Theorem
+		- P140. The Expectation and Variance of Random Variables
+		- P142. Multivariate Distributions
+		- P143. Discrete Distributions
+			- P143. Bernoulli
+			- P143. Binomial
+			- P144. Multinoulli
+			- P144. Poisson
+			- P145. Geometric
+		- P149. Multinomial Expansion

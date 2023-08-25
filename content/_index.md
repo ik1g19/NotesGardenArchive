@@ -15,39 +15,39 @@ enableToc: false
 
 ## Year 1
 
-#### Algorithmics
+#### Algorithmics <font color="red">Scanning...</font>
 
-#### Programming 1
+#### Programming 1 <font color="red">Scanning...</font>
 
-#### [[notes/Uni Content/Comp Systems 1/Comp Systems 1|Comp Systems 1]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Comp Systems 1/Comp Systems 1|Comp Systems 1]] 📝
 
-#### [[notes/Uni Content/Data Management/Data Management|Data Management]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Data Management/Data Management|Data Management]] 📝
 
-#### Professional Development
+#### Professional Development <font color="red">Scanning...</font>
 
-#### [[notes/Uni Content/Programming 2/Programming 2|Programming II]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Programming 2/Programming 2|Programming II]] 📝
 
-#### [[notes/Uni Content/Foundations of Comp Sci/Foundations of Comp Sci|Foundations of Comp Sci]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Foundations of Comp Sci/Foundations of Comp Sci|Foundations of Comp Sci]] 📝 📙
 
-#### Software Modelling and Design
+#### Software Modelling and Design <font color="red">Scanning...</font>
 
 ## Year 2
 
-#### [[notes/Uni Content/Distributed Systems and Networks/Distributed Systems and Networks|Distributed Systems and Networks]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Distributed Systems and Networks/Distributed Systems and Networks|Distributed Systems and Networks]] 📝
 
-#### Intelligent Systems
+#### Intelligent Systems <font color="red">Scanning...</font>
 
-#### [[notes/Uni Content/Programming 3/Programming 3|Programming 3]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Programming 3/Programming 3|Programming 3]] 📝
 
-#### [[notes/Uni Content/Theory of Computing/Theory of Computing|Theory of Computing]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Theory of Computing/Theory of Computing|Theory of Computing]] 📝
 
-#### [[notes/Uni Content/SEG/SEG|Software Engineering Group Project]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/SEG/SEG|Software Engineering Group Project]] 📝
 
-#### Programming Language Concepts
+#### Programming Language Concepts <font color="red">Scanning...</font>
 
-#### [[notes/Uni Content/Interaction Design/Interaction Design|Interaction Design]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Interaction Design/Interaction Design|Interaction Design]] 📝
 
-#### [[notes/Uni Content/Principles of Cyber Security/Principles of Cyber Security|Principles of Cyber Security]] <font color="red">Paper Notes</font>
+#### [[notes/Uni Content/Principles of Cyber Security/Principles of Cyber Security|Principles of Cyber Security]] 📝
 
 ## Year 3
 
@@ -57,7 +57,7 @@ enableToc: false
 
 #### [[notes/Uni Content/Computer Vision/Computer Vision ToC|Computer Vision]]
 
-#### Engineering Management and Law
+#### Engineering Management and Law <font color="red">Formatting...</font>
 
 #### Web and Cloud Based Security <font color="red">Formatting...</font>
 

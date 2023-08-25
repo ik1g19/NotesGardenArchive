@@ -2,11 +2,11 @@
 title: Image Formation
 ---
 
-# Inverse [[Fourier Transformation]]
+# Inverse Fourier Transformation
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/UYGkq5xc9QjoeOtbV6kE7dPGvk1Pu8M76GmCNipB_IheLBf_Wo494PqC_ohxoFMbCX2IMCbX65e2ZRW_2JzMoLamowVsqS1FQY-og3fflaEwttqsxMXHzrlbwzsF5ZLv.png)  
 
-Reconstructing a signal from its Fourier transformation
+Reconstructing a signal from its [[Fourier Transformation]]
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/Y-TYs3gCUHiXJyGQ8AJ3DznFvV1hkY1nsaIYOH90E4oP28z18dQMbiA0_BsPHywTKOlrSeTtmUV8L3Cl6EEmH9qh9GBkSVhDRTRyf6Q7iWIlklCcwV2CWW0aIHyQ3K7d.png)  
 
@@ -34,10 +34,10 @@ In this example image, there are lots of vertical structures, so there are horiz
 Intensity varies depending on which direction you travel across an image
 - High frequencies→are where the intensity changes a lot
 - Low frequencies→are where the intensity doesn't change much
-## [[Fourier Transformation]] of a Rectangular Pulse
+## Fourier Transformation of a Rectangular Pulse
 ![|400](https://remnote-user-data.s3.amazonaws.com/ziiB58lQn2ljA1bnxV2ph5Rt9ZnbCAZopP5js9FPktPvGVWf__Coy8XqCaEt8R6oPpTGGFLaxDdbHie93cojMWid_qLj_7THJAG9ryf1qL-C9gUypR7QjmSDGWsk9Tph.png)  
 ![|400](https://remnote-user-data.s3.amazonaws.com/2taCqxtQDTbrwPi5P4--KZzHE12AeRyARYCVxOgguWOiUuiGeuxNepNMFYsxxXDc2htbLPy0_sSXmRt00z81fsW-UNQTscB5y1eBmHDN_geKdRPhsSqiCkvPUpZVPXGg.png)  
-## Magnitude and Phase of [[Fourier Transformation]] of a pulse 
+## Magnitude and Phase of Fourier Transformation of a pulse 
 ![|400](https://remnote-user-data.s3.amazonaws.com/Hrq-_jNh4H-o3BH8SBfcV5OeEVuPDYLeeoJuUKkzX_YpdPZzJyPCUx56NRU49OZnmmJFTWuAVGnsXvc1atU9p0A95FGCfSN7oNdE2noawh2WrauqRmRfo2a9gqKgvypE.png)  
 ## Effects of Differing Image Resolution 
 ![|400](https://remnote-user-data.s3.amazonaws.com/ZA9t7uzW_i1aU2pIC251UOHOTv51rGDDlv8sVOZk0W6ECvW4ucz6H_S2gzpbtfJQDGdpWkMsYo7ugI1nwcnasIrMOGIuO3zzttrBC6oN-SqoCD1qeIRgynUC0syH4iOT.png)
@@ -45,19 +45,19 @@ Intensity varies depending on which direction you travel across an image
 Low resolution→Lose information
 - But NxN points implies a lot of storage
 	- How to choose an appropriate value for N?
-## What does the [[Fourier Transformation]] Do?
+## What does the Fourier Transformation Do?
 ![|400](https://remnote-user-data.s3.amazonaws.com/Zsu0D23pe2JV9V5B01rY9BgL77Xp4gz9_tqe3jvFpeQM14lqU-KWaYlFfXrtBGAr1vGIuvDHUzuujq23WpXHura_4bx0H_3OpXOEpPNMt1rw7hvzojtnRg2xhZ5C4zb9.png)   
-The Fourier Transform can→separate a complex signal into its fundamental frequencies, which when added together will give the original signal
-Fourier's treatise↔Periodic function is the result of adding up sine and cosine waves of different frequencies
+The [[Fourier Transform]] can separate a complex signal into its fundamental frequencies, which when added together will give the original signal
+Fourier's treatise - Periodic function is the result of adding up sine and cosine waves of different frequencies
 ## The Importance of Phase
 ![|400](https://remnote-user-data.s3.amazonaws.com/HG2aG7xeGNTtASIm2Xz2i4EarfDekc1BhECtECyGuGIMbDUOFnxakX2gNpQ1ZTccBmG_AbQDtslM-_x42_1A_SiYiV-Kr1tHgymMrUQJqGH8I0ONSQZCBvF-jdob9XsB.png)  
  
-## Jean Baptiste Joseph [[Fourier]]   
+## Jean Baptiste Joseph Fourier   
 - Invented transforms
-- Basis of the [[Fourier transformation]] - Any periodic function is the result of adding up sine and cosine waves of different frequencies
+- Basis of the [[Fourier Transformation]] - Any periodic function is the result of adding up sine and cosine waves of different frequencies
 - Found a way to understand the sine waves and cosine waves that make up the original signal
 
-## [[Fourier Transformation]] Formula
+## Fourier Transformation Formula
 1. The Fourier Transformation is a function $a( )$ of a time-variant signal $p(t)$
 2. The Fourier Transform is then $Fp=a(p(t))$ 
 3. The transform is a function of frequency
@@ -72,8 +72,8 @@ Fourier's treatise↔Periodic function is the result of adding up sine and cosin
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/A-TC-l9NFw9Uqj432itokNYFck2y8VNQ2XsPQnupd6CHTpdfN21zhlb-tHgyhoGL3t_a_WWN_4lJLmxdNOaYD-8GvcGwJY6ejqPqTz9Jg-vgntW1o9Th_EaCB0ZhulQ8.png)  
 
-## [[Inverse Fourier Transformation]]
+## Inverse Fourier Transformation
 
-Reconstructing a signal from its Fourier transformation
+[[Inverse Fourier Transformation]] - Reconstructing a signal from its Fourier transformation
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/UYGkq5xc9QjoeOtbV6kE7dPGvk1Pu8M76GmCNipB_IheLBf_Wo494PqC_ohxoFMbCX2IMCbX65e2ZRW_2JzMoLamowVsqS1FQY-og3fflaEwttqsxMXHzrlbwzsF5ZLv.png)  

@@ -27,17 +27,17 @@ So to change the brightness of an image, choose values for $k$ and $l$
 ## Copy
 ![|400](https://remnote-user-data.s3.amazonaws.com/CduIDJwfhy1oPGyckj7iwy_Xt9fUXsSsZcC1U-KJGUNqqdeOeTWijhY_9sL-vgQ7v1YaDcnPyblitg1emrGPVhje10lnGCdnXLtL6OuxRhtAt7YGMOIWj9flyDuKiPVR.png)
 
-What is the Mapping?→White becomes white and black becomes black 
+What is the Mapping? - White becomes white and black becomes black 
 ## Brightness Inversion
 ![|400](https://remnote-user-data.s3.amazonaws.com/fh8KAus9iEHcOtKZwctf2jjeD-53-OIytUtEBQK4m0xh_x7bQNijHoK720JnOvSz-lGN_27D4WILLWmPYlBEEtlBhLyS9u8TQU7y6xXZCGWeO3f7Ias5FVWKyGErdLVn.png) 
 
-What is the Mapping?→White values are swapped for black and black values are swapped for white
+What is the Mapping? - White values are swapped for black and black values are swapped for white
 
 ## Brightness Addition
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/12DUf-6MAZAJGrt_67T2P7YY9d7nLq8w3mWk9L8WPc8om8cBbAjszZca5GSLIaiJNJWJJv9tJi-hFRlJJKejAYlkQGp77_aa36n31O7-11yM-cNEQoKcdEWXc4sMFrr9.png) 
 
-What is the Mapping?→Involves a clipping process, as you cannot get whiter than white or blacker than black
+What is the Mapping? - Involves a clipping process, as you cannot get whiter than white or blacker than black
 
 ## Brightness Scaling by Multiplication
 What is the Mapping?
@@ -47,34 +47,42 @@ What is the Mapping?
 ## Logarithmic Compression
 ### Brightness compression
 ![|200](https://remnote-user-data.s3.amazonaws.com/AWyiLa8PGwiJ9vz93oeum51FfNoRFXHMgxgk8Kye27-wMSl21Ym76YckETwKGI96Ms9NcXuJNrILBf7xeof_tcDcHR3jggkP0ckLjzW9louxQvfgxZJ3m2a1wpxwhNaW.png) 
+
 $$N_{x,y}=log(O_{x,y}) $$
-What does it do?→Replaces the value by the logarithm of its value
+
+What does it do? - Replaces the value by the logarithm of its value
 ## Exponential Expansion
 ### Brightness expansion
  ![|200](https://remnote-user-data.s3.amazonaws.com/Qm-ubI-EKmOpbQUxHFbtKRSPGKMvg2nBbQuJPidU42OwWJVMQv__uSk_QfIdAleg8wtFz0QHyxj9-BFyjZ5UePDRf-tQAqzVB3FjH6VqIjZNtkoF3gfsV9j1l7oUA7D3.png) 
+
 $$N_{x,y}=exp(O_{x,y})$$
+
 What does it do?→Performs an exponential operation on each point
 
 # Intensity Normalisation
-Aim is to use all available grey levels for display
+Intensity [[Normalisation]] - Aim is to use all available grey levels for display
 ## Intensity Normalisation Process
-Original Histogram![|400](https://remnote-user-data.s3.amazonaws.com/BkS2MmNLNKwYmph3wyYTn8LFLXEeJ2NM42JFJHOGmrWFFusOa69MonNbhesv8SiJXkFuU2mUWVv-DINQGYF4LvUiKdGPP2l5lIptdSzqpvx67Dif_GiIXIIFtfYakRpi.png)
+Original Histogram
+
+![|400](https://remnote-user-data.s3.amazonaws.com/BkS2MmNLNKwYmph3wyYTn8LFLXEeJ2NM42JFJHOGmrWFFusOa69MonNbhesv8SiJXkFuU2mUWVv-DINQGYF4LvUiKdGPP2l5lIptdSzqpvx67Dif_GiIXIIFtfYakRpi.png)
 
 1. Shift the origin to zero (subtract the minimum value)
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/N05Thqptywelz0hCsb1R2D07E2-YAK0zBnt4Xfh5GZqU-_fY5beROvWR1pgT7CqvyxPm5gDNyoYM9tbA6xMOIiplkYcswpdEZ3E0JUUAMzR4Km-eZ8p3OrFGPtDNz8CP.png) 
  
 2. Scale brightness to use whole range
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/PhSveFC1gJqeASuEnw7V6WrL1os9riWX8H9fx9Tk5fmYzAERNVzFY3WsVdZuILMJpQIlHDpW1sOC6QIoHRhyGGjiB5csPrtQkXMyRKBHvDP_FiPRnBPsejiniwGmuVNl.png) 
 
 $$N_{x,y}=\frac{N_{max}-N_{min}}{O_{max}-O_{min}}\cdot (O_{x,y}-O_{min})+N_{min}$$
 Where
 - N - New image 
-	- N_{max} - Maximum output
-	- N_{min} - Minimum output
-- x,y - Coordinates
+	- $N_{max}$ - Maximum output
+	- $N_{min}$ - Minimum output
+- $x,y$ - Coordinates
 - O - Old image 
-	- O_{min} - Minimum input
-	- O_{max} - Maximum input
+	- $O_{min}$ - Minimum input
+	- $O_{max}$ - Maximum input
 
 # Intensity Normalisation vs Histogram Equalization
 ## Intensity Normalised
@@ -131,8 +139,13 @@ $$\sum\limits_{l=0}^{M}N(l)=q\cdot \frac{N^2}{N_{max}-N_{min}}$$
 # Thresholding an Image
 What is it?
 - Set the point to white if above a certain threshold, otherwise black
+
 $$N_{x,y}=\begin{cases}255 & if & N_{x,y}>threshold\\0 & otherwise\end{cases}$$
-## Thresholding at level 160
+
+[[Thresholding]] at level 160
+
 ![|200](https://remnote-user-data.s3.amazonaws.com/G5arlwbtidFIklArByboCOSPTzjKoLiLiTV_zc_rTs1LaLrs-XF_9u0_pwVDKW98N3nCxvrxtZmZ25XiUM_G4JKriKEP0N2nkP1XLxjB2nUBpFc8wF_InxDPV70WZ4x3.png) 
-## Thresholding at level 127
+
+[[Thresholding]] at level 127
+
 ![|200](https://remnote-user-data.s3.amazonaws.com/nnLhSsmAFeImLUVie9DSrhVuK-QwxWduhOnhHG2kpmcEfc4lpnVOPA1PBmWuuPIHOO4mx2u7RYKh2WOQbURTCoBrFxJDYQvJfWcyRUK0kbLaVSVF8Ts8uhpXwiLO4WMB.png) 
