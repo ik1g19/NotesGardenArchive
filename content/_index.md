@@ -1,5 +1,5 @@
 ---
-title: Isaac's UoS Notes
+title: Notes
 enableToc: false
 ---
 
@@ -25,7 +25,7 @@ enableToc: false
 
 #### Professional Development <font color="red">Scanning...</font>
 
-#### [[notes/Uni Content/Programming 2/Programming 2|Programming II]] 📝
+#### [[notes/Uni Content/Programming 2/Programming 2|Programming II]] 📝 📙
 
 #### [[notes/Uni Content/Foundations of Comp Sci/Foundations of Comp Sci|Foundations of Comp Sci]] 📝 📙
 
@@ -39,7 +39,7 @@ enableToc: false
 
 #### [[notes/Uni Content/Programming 3/Programming 3|Programming 3]] 📝
 
-#### [[notes/Uni Content/Theory of Computing/Theory of Computing|Theory of Computing]] 📝
+#### [[notes/Uni Content/Theory of Computing/Theory of Computing|Theory of Computing]] 📝 📙
 
 #### [[notes/Uni Content/SEG/SEG|Software Engineering Group Project]] 📝
 
