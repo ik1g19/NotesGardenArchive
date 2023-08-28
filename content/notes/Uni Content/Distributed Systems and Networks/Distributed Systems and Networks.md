@@ -3,3 +3,190 @@ title: "Distributed Systems and Networks"
 ---
 
 <iframe src="https://drive.google.com/file/d/1zN8u-GU7YLTQh4FQFCleK08YTu1tre7e/preview" width="640" height="780" allow="autoplay"></iframe>
+
+
+
+# Contents
+
+- P1. Physical and Link Layers
+	- P1. Layer Encapsulation
+	- P2. Transmitting Bits
+	- P2. Link Layer Functions
+	- P3. Flow Control
+	- P3. Link Layer Acknowledgements
+	- P3. Handling ACKs and Errors
+	- P4. Detecting Errors
+	- P5. Framing
+	- P5. MAC
+- P7. The Internet/Network Layer
+	- P7. Network Layer Functions
+	- P8. IP Properties
+	- P9. Unreliability
+	- P9. IPv4 Packet Header
+	- P9. Fragmentation
+	- P10. Maximsing use of Address Space
+	- P10. Subnets
+	- P11. CIDR
+	- P12. ARP
+	- P13. ICMP
+	- P13. Ethernet and LAN
+	- P13. MAC Address
+	- P14. Ethernet Switches
+	- P14. Address Resolution Protocol
+	- P16. Virtual LANs
+	- P17. Ethernet Frame Priority
+- P18. Transport Layer
+	- P18. UDP
+	- P18. UDP Loss
+	- P19. TCP
+	- P19. TCP/UDP Service Model
+	- P20. TCP Connection Establishment
+	- P21. TCP Flow Control
+	- P21. The Sliding Window
+	- P22. TCP Congestion Control
+	- P22. TCP for Video
+	- P23. UDP for Video/Audio
+	- P23. TCP vs UDP
+- P24. The Domain Name System
+	- P24. Looking up Data in the DNS
+	- P24. DNS Resolves
+	- P25. Finding DNS Servers
+	- P27. IP Routing Protocols
+	- P27. Routing within a Site
+	- P28. Types of Routing Protocol
+	- P29. Routing Information Protocol
+	- P29. RIP Limitations
+	- P30. Link State Routing
+	- P31. Inter-Site Routing
+- P33. IPv6
+	- P33. IPv4 Address Exhaustion
+	- P33. IPv6 Features
+	- P34. IPv6 Address Scopes
+	- P35. IPv6 Header
+	- P36. Extension Headers
+	- P36. Neighbour Discovery
+	- P37. Router Advertisements
+	- P37. Stateless Address Auto Configuration (SLAAC)
+	- P37. IPv6 Autoconf Example
+	- P38. Privacy Extensions
+	- P38. Benefits of IPv6
+	- P38. Dual Stack Systems
+	- P39. Translation Mechanisms
+	- P39. Tunneling
+	- P39. Dual Stack Lite
+	- P40. Barriers to Deployment
+- P40. Application Layer Protocols
+	- P40. DHCP
+	- P40. Telnet
+	- P41. Simple Mail Transfer Protocol
+	- P41. IMAP
+	- P41. Hypertext Transfer Protocol
+	- P42. Quick UDP Internet Connections (QUIC)
+	- P42. Contrained Application Protocol
+	- P43. Real Time Streaming Protocol (RTSP)
+	- P43. File Sharing Protocols
+		- P43. SMB
+		- P43. NFS
+		- P43. P2P
+- P45. Network Security
+	- P45. DNS Exploitation
+	- P46. DNS Privacy
+	- P46. DNS Security Extensions
+	- P47. Firewalls
+	- P47. Stateful Firewalls
+	- P48. Application Layer Firewalls
+	- P48. Network Intrusion Detection
+	- P49. Physical Security
+	- P49. Network Access Control
+	- P49. 802.1x
+	- P50. IPSEC
+	- P50. Virtual Private Networking
+	- P51. Wireless Security
+	- P51. WEP
+	- P51. WPA/WPA2
+	- P52. WPA PSK Vulnerabilities
+	- P52. KRACK
+	- P53. DDoS
+	- P53. TCP SYN Flood
+	- P54. LOIC & HOiC
+	- P54. Slow LORIS
+	- P54. IPv6 RA Flood
+	- P55. DDoS Mitigation
+	- P55. MQTT and CoAP
+		- P57. CoAP Header
+		- P57. Resource Discovery
+- P58. Characteristics of Distributed Systems
+	- P58. Cloud Computing
+	- P59. Big Data
+	- P59. Decentralized Networks
+	- P59. internet of Things (IoT)
+	- P60. Edge and Fog Computing
+	- P60. Challenges of Distributed Systems
+	- P62. Distributed Algorithms
+	- P64. Synchronous and Asynchronous
+	- P64. Time in Distributed Systems
+	- P65. Clock Synchronizations
+	- P65. Synchronization Algorithms
+	- P66. Cristian's Algorithm
+	- P66. Berkely Algorithm
+	- P67. Network Time Protocol
+	- P67. Logical Clocks
+		- P67. Logical Time
+		- P68. The Happened-Before Relation
+		- P69. Lamport's Logical Clocks
+		- P69. Implementation of Logical Clocks
+		- P70. Vector Clocks
+		- P71. Vector Clock Implementation
+- P72. Physical, Architectural and Fundamental Models
+	- P72. Physical Models
+	- P73. Architectural Models
+	- P74. Architectural Elements
+	- P74. Communicating Entities
+	- P75. Communication Paradigms
+	- P76. Roles and Responsibilities
+	- P76. Placement
+	- P78. Architectural Patterns
+		- P78. Layering
+		- P79. Tiering
+		- P79. Thin Clients
+	- P80. Other Patterns
+	- P80. Fundamental Models
+	- P81. Interaction Model
+	- P83. Failure Models
+	- P85. Security Model
+- P87. Distributed Mutual Exclusion
+	- P87. Failure Assumptions
+	- P87. Failure Detectors
+	- P88. Distributed Mutual Exclusion Protocols
+	- P90. Central Server Algorithm
+	- P91. Ring Based Algorithm
+	- P92. Ricart and Agrawala's Algorithm
+	- P95. Mackawa's Algorithm
+	- P96. Mackawa's Voting Algorithm
+	- P98. Fault Tolerance
+	- P99. Remote Invocation
+	- P101. Remote Procedure Call (RPC)
+	- P102. Design Issues for RPC
+		- P102. RPC Call Semantics
+	- P103. Remote Method Invocation (RMC)
+- P106. Web Services
+	- P106. Web Service Layers
+	- P107. SOAP Protocol
+	- P108. SOAP Messages
+	- P109. RESTful Web Services
+	- P111. Leader Election
+		- P113. Ring-Based Algorithm
+		- P115. Bully Election Algorithm
+- P119. Distributed Transactions
+	- P121. Conflicting Operations
+	- P121. Concurrency Controls
+	- P122. Recoverability from Aborts
+	- P123. Two Phase Commit Protocol (2PC)
+	- P125. Reliable and Ordered Multicast
+	- P127. Basic Multicast
+	- P127. Atomic Basic Multicast
+	- P127. Reliable Multicast
+	- P129. Ordered Multicast
+	- P130. Ordered Multicast: FIFO Ordering
+	- P130. Ordered Multicast: Total Ordering
+	- P132. Ordered Multicast: Causal Ordering

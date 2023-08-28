@@ -33,7 +33,7 @@ enableToc: false
 
 ## Year 2
 
-#### [[notes/Uni Content/Distributed Systems and Networks/Distributed Systems and Networks|Distributed Systems and Networks]] 📝
+#### [[notes/Uni Content/Distributed Systems and Networks/Distributed Systems and Networks|Distributed Systems and Networks]] 📝 📙
 
 #### Intelligent Systems <font color="red">Scanning...</font>
 
