@@ -30,7 +30,7 @@ title: "Distributed Systems and Networks"
 	- P10. Maximsing use of Address Space
 	- P10. Subnets
 	- P11. CIDR
-	- P12. ARP
+	- P12Cooperative Games. ARP
 	- P13. ICMP
 	- P13. Ethernet and LAN
 	- P13. MAC Address
@@ -76,7 +76,7 @@ title: "Distributed Systems and Networks"
 	- P38. Dual Stack Systems
 	- P39. Translation Mechanisms
 	- P39. Tunneling
-	- P39. Dual Stack Lite
+	- P39Cooperative Games. Dual Stack Lite
 	- P40. Barriers to Deployment
 - P40. Application Layer Protocols
 	- P40. DHCP

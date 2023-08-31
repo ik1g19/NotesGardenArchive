@@ -41,27 +41,27 @@ enableToc: false
 
 #### [[notes/Uni Content/SEG/SEG|Software Engineering Group Project]] 📝
 
-#### [[Programming Language Concepts]] 📝📝📝
+#### [[Programming Language Concepts]] 📝
 
 #### [[notes/Uni Content/Interaction Design/Interaction Design|Interaction Design]] 📝
 
-#### [[notes/Uni Content/Principles of Cyber Security/Principles of Cyber Security|Principles of Cyber Security]] 📝📝
+#### [[notes/Uni Content/Principles of Cyber Security/Principles of Cyber Security|Principles of Cyber Security]] 📝
 
 ## Year 3
 
 #### [[notes/Uni Content/Advanced Computer Networks/Advanced Computer Networks ToC|Advanced Computer Networks]]
 
-#### Advanced Databases <font color="red">Formatting...</font>
+#### [[Advanced Databases ToC|Advanced Databases]]
 
 #### [[notes/Uni Content/Computer Vision/Computer Vision ToC|Computer Vision]]
 
 #### Engineering Management and Law <font color="red">Formatting...</font>
-📝
-#### Web and Cloud Based Security <font color="red">Formatting...</font>
+
+#### [[Web and Cloud Based Security]]
 
 ## Year 4
 
-#### [[notes/Uni Content/Advanced Programming Language Concepts/Advanced Programming Language Concepts ToC|Advanced Programming Langauge Concepts]]📝
+#### [[notes/Uni Content/Advanced Programming Language Concepts/Advanced Programming Language Concepts ToC|Advanced Programming Langauge Concepts]] 
 
 #### [[notes/Uni Content/Algorithmic Game Theory/Algorithmic Game Theory ToC|Algorithmic Game Theory]]
 
@@ -69,4 +69,4 @@ enableToc: false
 
 #### [[notes/Uni Content/Intelligent Agents/Intelligent Agents ToC|Intelligent Agents]]
 
-#### [[notes/Uni Content/Software Security/Software Security ToC|Software Security]]📝📝
+#### [[notes/Uni Content/Software Security/Software Security ToC|Software Security]] 
