@@ -3,6 +3,10 @@ title: Notes
 enableToc: false
 ---
 
+# Useful Links
+
+#### [[My (Most) Useful Links]]
+
 # Workshops
 
 #### [[notes/CV Notes from Audioscenic/CV Notes from Audioscenic|CV Notes from Audioscenic]]
@@ -12,6 +16,10 @@ enableToc: false
 #### [[notes/Deep Learning with Pytorch Quickstart Notes/Deep Learning with Pytorch Quickstart Notes|Deep Learning with Pytorch Quickstart Notes]]
 
 # University Notes
+
+## General Modules
+
+#### [[MLT ToC|Machine Learning Technologies]]
 
 ## Year 1
 
