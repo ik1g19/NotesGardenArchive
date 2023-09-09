@@ -23,7 +23,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
-  right: [Component.Graph(), Component.Backlinks()],
+  right: [Component.Graph({localGraph: {fontSize:0.2}, globalGraph: {fontSize: 0.2}}), Component.Backlinks()],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
