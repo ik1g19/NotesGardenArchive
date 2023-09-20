@@ -11,9 +11,13 @@ enableToc: false
 
 #### [[notes/CV Notes from Audioscenic/CV Notes from Audioscenic|CV Notes from Audioscenic]]
 
-# Notes from Reading
+# Books
 
 #### [[notes/Deep Learning with Pytorch Quickstart Notes/Deep Learning with Pytorch Quickstart Notes|Deep Learning with Pytorch Quickstart Notes]]
+
+# Courses
+
+#### [[NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)]]
 
 # University Notes
 
