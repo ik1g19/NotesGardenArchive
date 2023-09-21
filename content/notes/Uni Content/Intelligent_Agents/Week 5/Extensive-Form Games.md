@@ -9,7 +9,7 @@ Extensive form games model different kinds of strategic sequential decision maki
 - Games with imperfect information - Players may be uncertain about previous moves, may not know how the current state was reached
 - Games of perfect recall - No player forgets the action they previously chose
 # Ultimatum Game
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107154631.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107154631.png)
 Two agents want to share a cake
 1. First player suggests a split
 2. $P2$ can either accept the proposed split or reject it
@@ -30,9 +30,9 @@ Leaves represent the final outcome
 > - $u = (u_1,...,u_n)$, where $u_i : Z \rightarrow \mathbb{R}$ is a real valued utility function for player $i$ on the terminal nodes $Z$
 
 #### example
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107164833.png)
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107165127.png)
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107165331.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107164833.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107165127.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107165331.png)
 ## Strategies
 A strategy for player $i$ in an extensive-form game is a complete specification of the action taken at every note belonging to the player
 An agents strategy requires a decision at each choice node, regardless of whether or not it is possible to reach that node given the other choice nodes
@@ -40,7 +40,7 @@ An agents strategy requires a decision at each choice node, regardless of whethe
 > Let $G$ be a perfect-information extensive-form game. The pure strategies of player $i$ consist of the cartesian product $$\prod\limits_{h\in H, \pi (h)=i}\alpha(h)$$
 
 #### example
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107170609.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107170609.png)
 # Strategic Form Transformation
 We can assign a utility value for each player
 We then convert the extensive-form game into a strategic-form game
@@ -53,7 +53,7 @@ It is not always possible to transform a strategic form game into an extensive f
 
 #### example
 
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/exten%20to%20strat.gif)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/exten%20to%20strat.gif)
 
 >[!Tip]
 >You compute the set of pure strategies by taking the cross product of the Players actions
@@ -77,7 +77,7 @@ Subgame perfect equilibrium captures why equilibria can be unsatisfying
 > The set of subgames of $G$ consist of all subgames rooted at some node in $G$
 
 To find the subgames of an extensive form game, we look at each nonterminal node of the game and take the tree originating from the node
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/subtrees.gif)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/subtrees.gif)
 ### Subgame Perfect Equilibria
 >[!Definition]
 >A strategy profile $s$ in an extensive form game $G$ is a **subgame perfect equilibrium** if, for each subgame $G'$ of $G$, the restriction of $s$ to $G'$ is a pure strategy Nash equilibrium
@@ -89,11 +89,11 @@ To find the subgames of an extensive form game, we look at each nonterminal node
 >For every extensive form game the set of subgame perfect equilibria is a subset of the set of pure strategy Nash equilibria
 
 #### example
-![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221107181717.png]]
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107181821.png)
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107181848.png)
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107181917.png)
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107182003.png)
+![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221107181717.png]]
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107181821.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107181848.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107181917.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107182003.png)
 # Backward Induction
 Backwards induction algorithm to reach the concept of a subgame perfect equilibrium
 
@@ -108,14 +108,14 @@ The algorithm runs in polynomial time in the size of the tree
 For every player $i$, let $s_i$ be the vector where each component is the choice made by the player in the process of selecting the equilibrium of a subgame
 $(s_1,...,s_n)$ is a subgame perfect equilibrium and the utility $u$ at the root node is the value of the equilibrium
 
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/subgame_perfect.gif)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/subgame_perfect.gif)
 #### Example
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/subgame_perfect_example.gif)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/subgame_perfect_example.gif)
 # Ultimatum Game (General Version)
 1. Player 1 can propose a division of the cake in $n$ parts, for any natural number $n > 1$
 2. Player 2 can either accept the subdivision or reject it, in that case, nobody gets anything
 3. For any game of this kind, no matter what $n$ we choose, there are always exactly two subgame perfect equilibria
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221113204129.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221113204129.png)
 In the first equilibrium, $P2$ chooses yes at every node, and so $P1$ choose $\frac{n}{0}$
 
 In the second equilibrium, $P2$ chooses yes at every node except at the left most node - so $P1$ chooses $n-\frac{1}{1}$
@@ -125,7 +125,7 @@ Any strategy combination $$(\frac{n}{0},(yes,x_1,...,x_n))$$ where each $x_i\in\
 $P1$ gets the best possible payoff by choosing $\frac{n}{0}$
 When $P1$ chooses $\frac{n}{0}$, the payoff for player 2 will be the same no matter what choice is made
 # Centipede Game
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221113204812.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221113204812.png)
 Two player game with 100 stages
 In odd stages ($t=1,3,...,99$) player 1 can either
 - Stop the game $S$ with payoff of $(t,t-1)$

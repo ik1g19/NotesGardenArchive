@@ -4,7 +4,7 @@ title: "Agent Based Negotiation"
 
 # **Conflict of Interest**
 Conflict arises when agents have {different preferences or aims}
-In [[notes/Uni Content/Intelligent Agents/Week 1/Introduction to Intelligent Agents#Multi-Agent System MAS|MAS]] conflicts arise when agents are {c1|self-interested} and the agents represent {c1|different stakeholders}
+In [[content/notes/Uni Content/Intelligent_Agents/Week 1/Introduction to Intelligent Agents#Multi-Agent System MAS|MAS]] conflicts arise when agents are {c1|self-interested} and the agents represent {c1|different stakeholders}
 ## Conflict Resolution
 Conflict resolution is possible when there is {a mutual benefit to reach an agreement}
 #### approaches for conflict resolution
@@ -87,7 +87,7 @@ The preferences over all possible agreements (and disagreements), typically spec
 - Divide and Choose
 
 ### Single-Issue Negotiation
-![|600](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221010165240.png)
+![|600](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221010165240.png)
 Overlap between sellers minimum price and buyers maximum price is the agreement space
 
 ### Bilateral Negotiation: The Ultimatum Game #flashcard 
@@ -107,7 +107,7 @@ Overlap between sellers minimum price and buyers maximum price is the agreement 
 - First player starts with proposing an offer
 - Second player can either accept or reject and counter offer, or reject and break off negotiation
 - Negotiation ends after set number of rounds (deadline) or if either players breaks off negotiations
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221010173339.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221010173339.png)
 
 ### Monotonic Concession Protocol #flashcard 
 - Negotiations proceed in rounds
@@ -121,7 +121,7 @@ Overlap between sellers minimum price and buyers maximum price is the agreement 
 - Used when a continuous resource needs to be divided between multiple agents
 - Agent 1 divides the pie into 2 portions
 - Agent 2 chooses one of the portions
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014124749.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221014124749.png)
 
 #### Properties #flashcard 
 - Only works for resource allocation problems
@@ -150,7 +150,7 @@ We can always infer ordinal preferences from cardinal ones
 
 ## Price Negotiation: Utility Space
 The utility space shows the utility of the two agents on respective axis for all possible outcomes
-![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221014132155.png]]
+![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221014132155.png]]
 
 ## Time Pressure
 
@@ -181,7 +181,7 @@ An agreement is said to be Pareto efficient (Pareto optimal) if no further impro
 
 **Pareto Efficient Frontier** - Set of all Pareto efficient agreements
 
-![|500](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014135629.png)
+![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221014135629.png)
 
 ## Desriable Properties
 - Agreements should be individually rational - $U(o)>U(disagreement)$
@@ -246,7 +246,7 @@ $F(0)=0$ and $F(T_{\max})=1$
 ##### Conceder ($\beta > 1$)
 - Concedes to the reservation value very quickly
 
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014153655.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221014153655.png)
 #### Tit-for-tat
 The agent detects the concession the opponent makes during the previous negotiation round, in terms of increase in its own utility function
 The concession the agent makes in the next round is equal to (or less than) the concession made by the opponent in the previous round $$concession\leq U_{own}(o_{opponent}^t)-U_{own}(o_{opponent}^{t-1})$$
@@ -262,7 +262,7 @@ If there is a lot of uncertainty about the opponents utility function and strate
 In multi-issue negotiation, you need to generate a value for each issue
 It is a good idea to ensure that the offer is always Pareto efficient
 If the utility functions are known, it is possible to calculate the Pareto-efficient offer at a certain target utility level
-![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221017132254.png]]
+![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221017132254.png]]
 ## Unknown Opponent Utility
 Typically the opponent utility is not known
 - This is **private information**

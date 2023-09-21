@@ -56,7 +56,7 @@ such that $$\sum\limits_{saddsa}\mu(\omega)=1$$
 # Lotteries
 A lottery over a set of outcomes $\Omega$ is a probability distribution over $\Omega$
 A lottery is denoted by $L$
-![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221019124845.png]]
+![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221019124845.png]]
 If the probability distribution of a conequence is 1, and all others 0, this is called a **degenerate lottery**
 ## Compound Lotteries
 A lottery of lotteries

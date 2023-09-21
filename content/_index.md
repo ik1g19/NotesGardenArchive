@@ -19,6 +19,12 @@ enableToc: false
 
 #### [[NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)]]
 
+# Interview Notes
+
+#### [[content/notes/NodeJS Interview Questions/NodeJS Interview Questions|NodeJS Interview Questions]]
+
+#### [[C Sharp and Dot Net Interview Concepts]]
+
 # University Notes
 
 ## General Modules
@@ -79,6 +85,6 @@ enableToc: false
 
 #### [[notes/Uni Content/Biometrics/Biometrics ToC|Biometrics]]
 
-#### [[notes/Uni Content/Intelligent Agents/Intelligent Agents ToC|Intelligent Agents]]
+#### [[content/notes/Uni Content/Intelligent_Agents/Intelligent Agents ToC|Intelligent Agents]]
 
 #### [[notes/Uni Content/Software Security/Software Security ToC|Software Security]] 

@@ -29,7 +29,7 @@ Not all games have strictly dominated strategies, so we cannot always reach an o
 When eliminating strictly dominated strategies, the result is always independent of the order of elimination
 
 ## Prisoner's Dilemna Example
-![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221020163339.png]]
+![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221020163339.png]]
 # Weakly Dominated Strategies
 > [!Definition]
 A strategy $s_i$ of player $i$ is weakly dominated if there exists another strategy $s_i'$ of player $i$ satisfying  the following two conditions
@@ -42,11 +42,11 @@ We can then assume rational players will never play weakly dominated strategies,
 Weakly dominated strategies cannot always be performed
 Unlike strictly dominated strategies, the order of elimination does matter and we can get different results
 #### Example 1
-![|300](notes/Uni%20Content/Intelligent%20Agents/Images/weak1.gif)
+![|300](content/notes/Uni%20Content/Intelligent_Agents/Images/weak1.gif)
 #### example 2
-![|300](notes/Uni%20Content/Intelligent%20Agents/Images/weak2.gif)
+![|300](content/notes/Uni%20Content/Intelligent_Agents/Images/weak2.gif)
 #### example 3
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221116135136.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221116135136.png)
 # Pure Nash Equilibria
 We cannot perform elimination of dominated strategies in all games
 
@@ -58,7 +58,7 @@ Let $S_{-i}$ be a strategy vector for all the players not including $i$
 Player $i$'s strategy $s_i$ is called a best response to $S_{-i}$ if $$u_i(s_i,s_{-i})=\max\limits_{s_i'\in S_i}u_i(s_i',s_{-i})$$
 
 #### example
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221025190126.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221025190126.png)
 The strategy combination $(C,F)$ is such that the strategies are the best response to each other
 If players select this combination, none of them will benefit from changing their choices, because they have chosen a best response
 $(C,F)$ is an example of **Nash Equilibrium**
@@ -73,7 +73,7 @@ Determining the existence of a nash equilibrium for a strategic form game is in 
 For each player, compute the strategy combination where their strategy is a best response
 Take the intersection of the sets of all players
 #### example
-![|450](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221025193701.png)
+![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221025193701.png)
 Player 1's combinations:
 $\{(B,D),(A,E),(C,F)\}$
 Player 2's combinations:
@@ -87,7 +87,7 @@ If they can't, it is a nash equilibrium
 Nash equilibria may not be unique
 Coordination games are exmaples of games with multiple Nash Equilibria
 Equilibria arise when players coordinate on the same strategy
-![|400](notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221026142837.png)
+![|400](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221026142837.png)
 
 # Matching Pennies
 Not all games have Nash Equilibria
