@@ -11,7 +11,7 @@ NodeJS uses V8
 
 NodeJS adds features to V8
 
-![|700](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920131200.png)
+![|700](notes/NodeJS%20-%20The%20Complete%20Guide%20%28MVC,%20REST%20APIs,%20GraphQL,%20Deno%29/Images/Pasted%20image%2020230920131200.png)
 
 # JavaScript
 
