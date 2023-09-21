@@ -56,7 +56,7 @@ This is not the case for mixed Nash equilibria
 > [!Theorem (Daskalakis, Goldberg, Papadimitriou, 2009)]
 > Finding mixed Nash equilibria in a strategic-form game is PPAD-cmplete
 ## 2 x 2 Games
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173113.png]]
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221102173113.png)
 We represent a mixed strategy for player 1 as $x\in [0,1]$
 - Play $T$ with probability $x$
 - Play $B$ with probability $1-x$

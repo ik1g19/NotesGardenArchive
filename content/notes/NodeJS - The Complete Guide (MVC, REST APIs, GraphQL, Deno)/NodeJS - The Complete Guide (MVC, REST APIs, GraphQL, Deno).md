@@ -11,7 +11,7 @@ NodeJS uses V8
 
 NodeJS adds features to V8
 
-![[Pasted image 20230920131200.png]]
+![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920131200.png)
 
 # JavaScript
 
@@ -290,7 +290,7 @@ server.listen(3000);
 
 ## Parsing Request Bodies
 
-![[Pasted image 20230920144619.png]]
+![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920144619.png)
 
 `on()` allows us to listen for certain events
 
@@ -326,9 +326,9 @@ Sometimes functions passed as parameters will be executed asynchronously (later)
 
 ## Single Thread, Event Loop and Blocking Code
 
-![[Pasted image 20230920150931.png]]
+![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920150931.png)
 
-![[Pasted image 20230920151347.png]]
+![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920151347.png)
 
 `refs` increments by 1 for every new callback that is registered, and reduces it by 1 for every event listener it doesn't need anymore
 
@@ -406,4 +406,4 @@ exports.someText = 'Some hard coded text';
 
 ## Summary
 
-![[Pasted image 20230920152401.png]]
+![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920152401.png)
