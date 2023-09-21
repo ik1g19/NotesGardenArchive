@@ -4,7 +4,7 @@ title: "Agent Based Negotiation"
 
 # **Conflict of Interest**
 Conflict arises when agents have {different preferences or aims}
-In [[content/notes/Uni Content/Intelligent Agents/Week 1/Introduction to Intelligent Agents#Multi-Agent System MAS|MAS]] conflicts arise when agents are {c1|self-interested} and the agents represent {c1|different stakeholders}
+In MAS conflicts arise when agents are {c1|self-interested} and the agents represent {c1|different stakeholders}
 ## Conflict Resolution
 Conflict resolution is possible when there is {a mutual benefit to reach an agreement}
 #### approaches for conflict resolution
@@ -12,7 +12,7 @@ Conflict resolution is possible when there is {a mutual benefit to reach an agre
 - Voting
 - Negotiation
 
-### Auctions #flashcard 
+### Auctions
 Primarily used to allocate scarce resources or tasks
 
 e.g.
@@ -21,27 +21,27 @@ e.g.
 - Cloud computing
 - Stocks and shares
 
-#### Characterised by #flashcard 
+#### Characterised by
 - Clearly defined protocol
 - Typically requires a trusted third party e.g. auctioneer
 - Often involves a continuous resource such as money
 - Exploits competition between agents - works better with more agents
 
-### Voting #flashcard 
+### Voting
 Used for group based decisions (**social chocice**)
 
-#### characterised by #flashcard 
+#### characterised by
 - A single decision from a (typically finite) number of options
 - Each agent can have different preferences for each option - given by a preference order (ordinal utility function)
 - Clearly defined protocol
 
-### Negotiation #flashcard 
-Governed by a protocol which defines the [[#rules of encounter flashcard|Rules of Encounter]] between the agents
+### Negotiation
+Governed by a protocol which defines the Rules of Encounter between the agents
 
 {More flexible} compared to other approaches
 - Prtocol typically involves {exchanging offers, but can also include other information such as arguments (reasons why)}
 - Allows for {less structured} prtocols
-- Often [[#Bilateral]], but some protocols support [[#Multi-Part Negotiation]]
+- Often Bilateral, but some protocols support Multi-Part Negotiation
 
 Enables more complex types of agreements (multi-issue negotiation)
 Often decentralised (can involve mediator - agent mediated negotiation)
@@ -51,7 +51,7 @@ Between two agents
 ##### Multi-Party Negotiation
 Between more than two agents
 
-#### rules of encounter #flashcard 
+#### rules of encounter
 - Type of communication allowed
 - Type of proposals that are allowed
 - Who can make what proposal at what time
@@ -60,22 +60,22 @@ Between more than two agents
 
 ## Characterising Agent Negotiations
 
-### Negotiation Environment #flashcard 
+### Negotiation Environment
 Set of possible outcomes/agreements
 
-#### Single-issue Negotiation (Distributive Bargaining) #flashcard 
+#### Single-issue Negotiation (Distributive Bargaining)
 - e.g. price
 - Win-lose
 - Competitive setting
 
-#### Multi-issue Negotiation (Integrative Bargaining) #flashcard 
+#### Multi-issue Negotiation (Integrative Bargaining)
 - Includes more issues
 - Allows for mutual benefit and cooperation
 
-### Agent Preferences #flashcard 
+### Agent Preferences
 The preferences over all possible agreements (and disagreements), typically specified using utility functions
 
-### Agent Negotiation Strategies #flashcard 
+### Agent Negotiation Strategies
 - Specifies the behaviour of the agents
 - Actions employed at each possible decision point, given the information available to the agent
 
@@ -90,18 +90,18 @@ The preferences over all possible agreements (and disagreements), typically spec
 ![|600](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221010165240.png)
 Overlap between sellers minimum price and buyers maximum price is the agreement space
 
-### Bilateral Negotiation: The Ultimatum Game #flashcard 
+### Bilateral Negotiation: The Ultimatum Game
 - Agent 1 suggests a division
 - Agent 2 can only choose to accept or reject the proposed division
 - If agent 2 rejects, no-one receives anything
 - 'Take it or leave it'
 
-#### Advantages/Disadvantages #flashcard 
+#### Advantages/Disadvantages
 - Agent 1 has a clear advantage - the **first-mover advantage**
 - Assumes the agreement space (the size of the pie) is known - the seller's reserve and buyer's willingness to pay are shared knowledge
 - No ability to explore the negotiation space
 
-### Alternating Offers Protocol #flashcard 
+### Alternating Offers Protocol
 - Negotiation consists of a number of rounds
 - Agents exchange offers in an alternating fashion
 - First player starts with proposing an offer
@@ -109,7 +109,7 @@ Overlap between sellers minimum price and buyers maximum price is the agreement 
 - Negotiation ends after set number of rounds (deadline) or if either players breaks off negotiations
 ![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221010173339.png)
 
-### Monotonic Concession Protocol #flashcard 
+### Monotonic Concession Protocol
 - Negotiations proceed in rounds
 - In each round, agents simultaneously propose offers (without seeing the other offer)
 - If both others 'match' then one of them is chosen
@@ -117,17 +117,17 @@ Overlap between sellers minimum price and buyers maximum price is the agreement 
 - In the next round at least one of the agents need to concede
 - If neither of the agents concede, the negotiation ends without a deal
 
-### Divide and Choose #flashcard 
+### Divide and Choose 
 - Used when a continuous resource needs to be divided between multiple agents
 - Agent 1 divides the pie into 2 portions
 - Agent 2 chooses one of the portions
 ![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014124749.png)
 
-#### Properties #flashcard 
+#### Properties
 - Only works for resource allocation problems
 - Also works for non-homogenous resources (when parts of the pie are more attractive)
 
-## Desirable Properties of a Negotiation #flashcard 
+## Desirable Properties of a Negotiation
 - A deal should be better than no deal for all agents (individual rationality)
 - There should be no pie left (Pareto efficiency)
 - The agreement should be fair
@@ -137,7 +137,7 @@ An agents preferences over outcomes are modelled using a utility function $U(o)$
 
 ### There are Two types of Utility Functions
 
-#### Ordinal Preferences #flashcard 
+#### Ordinal Preferences
 A preference order over outcomes is specified but there is no numerical utility
 The agents specify what they prefer but now by how much
 - e.g. $U(o_1) > U(o_2)$ means that $o_1$ is preferred over $o_2$
@@ -150,19 +150,19 @@ We can always infer ordinal preferences from cardinal ones
 
 ## Price Negotiation: Utility Space
 The utility space shows the utility of the two agents on respective axis for all possible outcomes
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221014132155.png]]
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014132155.png)
 
 ## Time Pressure
 
-### Deadlines #flashcard 
+### Deadlines
 - Imposed by protocol
 - Or determined by individual constraints (deadlines of agents can differ)
 
-### Break-Off Probability #flashcard 
+### Break-Off Probability
 - Imposed by protocol
 - Or agents can decide to break off negotiations themselves
 
-### Bargaining Costs #flashcard 
+### Bargaining Costs
 - Fixed bargaining costs per round
 - Discount factors
 
@@ -262,7 +262,7 @@ If there is a lot of uncertainty about the opponents utility function and strate
 In multi-issue negotiation, you need to generate a value for each issue
 It is a good idea to ensure that the offer is always Pareto efficient
 If the utility functions are known, it is possible to calculate the Pareto-efficient offer at a certain target utility level
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221017132254.png]]
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221017132254.png)
 ## Unknown Opponent Utility
 Typically the opponent utility is not known
 - This is **private information**
@@ -273,6 +273,3 @@ In many cases even the agents own utility function is not fully known by itself
 The utility function is obtained through a process called **preference elicitation**
 - Has associated 'cognitive costs'
 - Trade-off between minimizing cognitive cost and maximising utility
-
-# Tags
-FILE TAGS intelligentAgents

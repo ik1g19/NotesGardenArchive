@@ -2,6 +2,9 @@
 title: "Week 1"
 ---
 
+# Concepts
+
+- [DBMS](DBMS.md)
 # Introduction
 
 ## **What is a Database?** 
@@ -12,6 +15,7 @@ title: "Week 1"
 - Has an intended group of users, and some preconceived applications in which these users are interested
 
 ## Database System vs. DBMS
+DBMS - Database Management System
  
  ![|400](https://remnote-user-data.s3.amazonaws.com/udoGFcr7CEHlYnKWD2CTq7w7-KE0bOYMe3656h5GCU9WCz2WEulOLdBI2QRBxYbiJfS5jODVu3kdJWKB44iAWClGz8CHS_OQIW-rHsiaGIj3ovfyM6sQRVcu5AvLLK6m.png) 
 ## **DBMS allows the user to**

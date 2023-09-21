@@ -1,7 +1,15 @@
 ---
 title: "Radio Fundamentals"
 ---
+# Concepts
 
+- [Bluetooth](concepts/Bluetooth.md)
+- [WiFi](WiFi.md)
+- [GSM](GSM.md)
+- [Modulation](Modulation.md)
+- [LoRaWAN](LoRaWAN.md)
+
+---
 # **Radio Spectrum**
 - Generally used for broadcasting 
 	- Centre frequency determines characteristics of the channel we're creating
@@ -99,12 +107,12 @@ title: "Radio Fundamentals"
 - GMSK - Minimum possible frequency shift and a Gaussian filter
 - DQPSK - Differential encoding uses data to change rather than set the phase
 ### WiFi  
-- [BPSK](../../Binary Phase Shift Keying.md) and [QPSK](../Week 1/Radio Fundamentals📡📖/Modulation/Quadrature Phase Shift Keying.md) 
+- BPSK and QPSK
 - 16 and 64 QAM 
 ### GSM  
-- [GMSK](../Week 1/Radio Fundamentals📡📖/Modulation/Applications of Modulation Schemes/Bluetooth/GMSK.md) 
+- GMSK
 ### Universal Mobile Telecommunications System (UMTS)  
-- [QPSK](../../Quadrature Phase Shift Keying.md) 
+- QPSK
 ### LORA  
 - Low power LoRaWAN
 
@@ -119,7 +127,7 @@ title: "Radio Fundamentals"
 
 ### Time Division Multiple Access
 - Divide access to the frequency band into a number of distinct time slots 
-- Used by [GSM](../Week 1/Radio Fundamentals📡📖/Modulation/Applications of Modulation Schemes/GSM.md)   
+- Used by GSM
 - Requires time synchronisation
 	- Difficult with mobile transceivers 
 		- Base station informs mobiles of delay required depending on distance

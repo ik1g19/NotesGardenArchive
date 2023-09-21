@@ -6,7 +6,7 @@ title: Image Formation
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/UYGkq5xc9QjoeOtbV6kE7dPGvk1Pu8M76GmCNipB_IheLBf_Wo494PqC_ohxoFMbCX2IMCbX65e2ZRW_2JzMoLamowVsqS1FQY-og3fflaEwttqsxMXHzrlbwzsF5ZLv.png)  
 
-Reconstructing a signal from its [[Fourier Transformation]]
+Reconstructing a signal from its Fourier Transformation
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/Y-TYs3gCUHiXJyGQ8AJ3DznFvV1hkY1nsaIYOH90E4oP28z18dQMbiA0_BsPHywTKOlrSeTtmUV8L3Cl6EEmH9qh9GBkSVhDRTRyf6Q7iWIlklCcwV2CWW0aIHyQ3K7d.png)  
 
@@ -47,14 +47,14 @@ Low resolution→Lose information
 	- How to choose an appropriate value for N?
 ## What does the Fourier Transformation Do?
 ![|400](https://remnote-user-data.s3.amazonaws.com/Zsu0D23pe2JV9V5B01rY9BgL77Xp4gz9_tqe3jvFpeQM14lqU-KWaYlFfXrtBGAr1vGIuvDHUzuujq23WpXHura_4bx0H_3OpXOEpPNMt1rw7hvzojtnRg2xhZ5C4zb9.png)   
-The [[Fourier Transform]] can separate a complex signal into its fundamental frequencies, which when added together will give the original signal
+The Fourier Transform can separate a complex signal into its fundamental frequencies, which when added together will give the original signal
 Fourier's treatise - Periodic function is the result of adding up sine and cosine waves of different frequencies
 ## The Importance of Phase
 ![|400](https://remnote-user-data.s3.amazonaws.com/HG2aG7xeGNTtASIm2Xz2i4EarfDekc1BhECtECyGuGIMbDUOFnxakX2gNpQ1ZTccBmG_AbQDtslM-_x42_1A_SiYiV-Kr1tHgymMrUQJqGH8I0ONSQZCBvF-jdob9XsB.png)  
  
 ## Jean Baptiste Joseph Fourier   
 - Invented transforms
-- Basis of the [[Fourier Transformation]] - Any periodic function is the result of adding up sine and cosine waves of different frequencies
+- Basis of the Fourier Transformation - Any periodic function is the result of adding up sine and cosine waves of different frequencies
 - Found a way to understand the sine waves and cosine waves that make up the original signal
 
 ## Fourier Transformation Formula
@@ -74,6 +74,6 @@ Fourier's treatise - Periodic function is the result of adding up sine and cosin
 
 ## Inverse Fourier Transformation
 
-[[Inverse Fourier Transformation]] - Reconstructing a signal from its Fourier transformation
+Inverse Fourier Transformation - Reconstructing a signal from its Fourier transformation
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/UYGkq5xc9QjoeOtbV6kE7dPGvk1Pu8M76GmCNipB_IheLBf_Wo494PqC_ohxoFMbCX2IMCbX65e2ZRW_2JzMoLamowVsqS1FQY-og3fflaEwttqsxMXHzrlbwzsF5ZLv.png)  

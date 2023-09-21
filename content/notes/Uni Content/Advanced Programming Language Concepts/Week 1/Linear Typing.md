@@ -11,60 +11,15 @@ e.g.
 	$A\vee \neg A$
 	$(A\to B)\wedge (\neg A\to B)\to B$
 A **Sequent** is an expression of the form $\phi_1,\dots,\phi_n\vdash \psi$ 
+
 For a sequent to be valid, it must evaluate to true for any potential assignment of variables that will make the formula on the left side of $\vdash$ evaluate to true
+
 An **Inference Rule** is an expression of the form $\dfrac{\alpha_1\;\;\dots\;\;\alpha_n}{\beta}$, where $\alpha_1,\dots\alpha_n$ are sequents
+
 The inference rule is valid if sequent $\beta$ is valid every time the sequents $\alpha_1,\dots\alpha_n$ are valid
 #### Logical Inference Rules
-$$
-\dfrac{}{A\vdash A}
-\hspace{10mm}
-\dfrac{\Gamma\vdash A\;\;\;\;\; A,\Delta\vdash B}{\Gamma,\Delta\vdash B}
-$$
-```start-multi-column  
-ID: Table  
-number of columns: 2  
-Border: off
-Shadow: off
-```
-$$
-\dfrac{\Gamma,A\vdash C}{\Gamma,A\wedge B\vdash C}
-$$
 
-$$
-\dfrac{\Gamma,B\vdash C}{\Gamma,A\wedge B\vdash C}
-$$
-
-$$
-\dfrac{\Gamma,A\vdash C\;\;\;\;\Delta, B\vdash C}
-{\Gamma,\Delta,A\vee B\vdash C}
-$$
-
-$$
-\dfrac{\Gamma\vdash A\;\;\;\;\Delta,B \vdash C}
-{\Gamma,\Delta,A\to B\vdash C}
-$$
-
---- end-column ---
-
-$$
-\dfrac{\Gamma\vdash A}{\Gamma\vdash A\vee B}
-$$
-
-$$
-\dfrac{\Gamma\vdash B}{\Gamma\vdash A\vee B}
-$$   
-
-$$
-\dfrac{\Gamma\vdash A\;\;\;\;\Delta\vdash B}
-{\Gamma,\Delta\vdash A\wedge B}
-$$    
- 
-$$
-\dfrac{\Gamma,A\vdash B}
-{\Gamma\vdash A\to B}
-$$
-
-=== end-multi-column
+![](Pasted%20image%2020230921210301.png)
 #### Structural Inference Rules
 $$
 \dfrac{\Gamma\vdash B}
@@ -93,7 +48,7 @@ $T_1 \to T_2$ is the set of all (computable) functions from type $T_1$ to type $
 ## Curry-Howard Isomorphism
 
 >[!Tip]
->The Curry-Howard isomorphism is a way of looking at mathematical proofs and computer programs in a similar way. It says that a mathematical proof can be thought of as a way of solving a problem, just like a computer program. And just like a computer program, a proof has a clear structure and steps to follow. So, the ideas behind a proof can be translated into a computer program and vice versa.
+>The Curry-Howard [Isomorphism](Isomorphism.md) is a way of looking at mathematical proofs and computer programs in a similar way. It says that a mathematical proof can be thought of as a way of solving a problem, just like a computer program. And just like a computer program, a proof has a clear structure and steps to follow. So, the ideas behind a proof can be translated into a computer program and vice versa.
 
 $$
 \dfrac{\Gamma\vdash exp_1\:A\;\;\;\;\Delta\vdash exp_2\:B}
@@ -127,19 +82,7 @@ $$
 {\Gamma\vdash A\to B}
 $$
 
-$$
-\dfrac{\Gamma\vdash f\:A\to B
-\;\;\;\;\;\;
-\Gamma\vdash exp\:A
-}
-{\Gamma\vdash f(exp)\:B}
-\hspace{10mm}
-\dfrac{\Gamma\vdash A\to B
-\;\;\;\;\;\;
-\Gamma\vdash A
-}
-{\Gamma\vdash B}
-$$ ---
+$$\dfrac{\Gamma\vdash f\:A\to B\;\;\;\;\;\;\Gamma\vdash exp\:A}{\Gamma\vdash f(exp)\:B}\hspace{10mm}\dfrac{\Gamma\vdash A\to B\;\;\;\;\;\;\Gamma\vdash A}{\Gamma\vdash B}$$ ---
 $$
 \dfrac{\Gamma\vdash exp\:B}
 {\Gamma,x\:A\vdash exp\:B}

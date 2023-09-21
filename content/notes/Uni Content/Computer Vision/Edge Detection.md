@@ -1,20 +1,31 @@
 ---
 title: Edge Detection
 ---
+# Concepts
 
-![|400](https://remnote-user-data.s3.amazonaws.com/sjzgE4trwlwrkAVA4R_0__PK9PfqVHk-JAnL9C0ro5ou59LGVZbOshNpAQgYacbuR2CWffld7-sEZrG18pcnsbsTYtLJsAkLaQaHWvMIpDKRZrLhtLVfyiIUfjFClfo3.png) 
+- [Edge Detection](concepts/Edge%20Detection.md)
+
+---
+# What is an Edge
 
 An edge is contrast
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/sjzgE4trwlwrkAVA4R_0__PK9PfqVHk-JAnL9C0ro5ou59LGVZbOshNpAQgYacbuR2CWffld7-sEZrG18pcnsbsTYtLJsAkLaQaHWvMIpDKRZrLhtLVfyiIUfjFClfo3.png) 
  
 # First Order Edge Detection
 ## Horizontal Differencing
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/Sa8mSnJnkV2ZXL2zukAk2NJ48CkAsVfXT26AbQW7WhZ_ozP47Gq18_KSXeaPdT_uyQY4twh2mVwVnpxAoB4Tn6ylx7xGvt9q7W7_BpO0o3NyDz7zJAuac64Sg2NOkQWd.png) 
+
 Detects vertical edges
+
 Horizontal Differencing - Calculates the difference between the current point and the point to the right
 ## Vertical DIfferencing
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/KLpQ4LDR9hc-RLSaOJKxY5KFWQz0-cr8yKdOS32FTFAPqattzNHRv_g8aC9X7kimWt40krDjNDOjxRS4NlXOuLF4TobPGMmSNbMOlt34OL7d5jdfzjf7ZCMM1-etUY2r.png) 
+
 Detects horizontal edges
+
 Vertical Differencing - Calculates the difference between the current point and the point below
 ## First order Edge Detection
 The addition of the horizontal and vertical differences
@@ -72,8 +83,8 @@ $$Ex_{x,y}=|P_{x+1,y}-P_{x-1,y}|  $$
 $$M=\sqrt{{M_x}^2+{M_y}^2}$$
 #### Direction $\theta$
 $$\theta=\tan^{-1}(\frac{M_y}{M_x})$$
-# Templates for 3x3 [[Prewitt Operator]]
-Averaging the improved horizontal and vertical operators over 3 rows/columns gives [[Prewitt]] templates
+# Templates for 3x3 Prewitt Operator
+Averaging the improved horizontal and vertical operators over 3 rows/columns gives Prewitt templates
 ## Mx
 ![|400](https://remnote-user-data.s3.amazonaws.com/uLRzJCjzIwk41eoGZwEOt6rphTD7ITDJzBlit3ZP9HVByif789uRNK8E1OdY5s-mizPasi5h9tG-KOVPd0sqYV213LHIEAUTmsD9r0xaN6iZyLrvNebVY1Cm7oQbS4kG.png) 
 ## My
@@ -97,9 +108,9 @@ No missing points in the corner, unlike before
 ![|400](https://remnote-user-data.s3.amazonaws.com/TAowEoFGhOlLPNay9atPmct9XZ93KUem7mOUdrna7fVkN9HZ22-g4AwOuDoqzOGc04SWS2c3JPkFh8jSRz8suVAH2XylfJP1ZJgJF7b8hyGz2_j_wV4LQhZVLh-CnPDK.png) 
 
 # Templates for Sobel Operator
-[[Sobel]] is the most popular basic operator
-It is an improvement of the [[Prewitt Operator]]
-Double the centre coefficients of the [[Prewitt Operator]]
+Sobel is the most popular basic operator
+It is an improvement of the Prewitt Operator
+Double the centre coefficients of the Prewitt Operator
 ## Mx
 ![|400](https://remnote-user-data.s3.amazonaws.com/6LPbR-I4CmNhYGxcAzTUB_qZQwLi2gI4wnWlREmwh2fNBoXbQ0vTDaXmWeiOKrhVmjqHGCcAgFWsOFvxfAJuDu5t7X5O6MSQDxdhCMypQu4D6Y6-74wfC-BIHVRFLvCq.png) 
 # My

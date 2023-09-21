@@ -1,7 +1,6 @@
 ---
 title: "Week 2"
 ---
-
 # Data Storage
 
 ## **Storage Organisation**
@@ -158,7 +157,8 @@ Switch track (within same cylinder)
 
 ## **Buffer Management**
 
-### ![|400](https://remnote-user-data.s3.amazonaws.com/S9jK-vxd0mBVQuFMVbtbxIUbTN5WKfSM7gy-Bltps3nGiIiYjMKdGcgn8TeNwbaoJJ1tAEOaDRDnga0TF9RlnuMv7pomT_94fIXhUz69ALMsb3lHGK6ooavJMqUeiMVx.png) 
+![|400](https://remnote-user-data.s3.amazonaws.com/S9jK-vxd0mBVQuFMVbtbxIUbTN5WKfSM7gy-Bltps3nGiIiYjMKdGcgn8TeNwbaoJJ1tAEOaDRDnga0TF9RlnuMv7pomT_94fIXhUz69ALMsb3lHGK6ooavJMqUeiMVx.png) 
+
 Buffer pool organised into **frames** 
 - **Size of database block + Metadata** 
 
@@ -173,9 +173,9 @@ Far more blocks of secondary storage than space in main memory
 - A Dirty Flag
 	- Dirty Flag↔1 if the copy in the buffer has been changed, 0 otherwise
 - An Access Time
-	- Access Time↔Optional - used for [LRU](Advanced Databases/Week 2/Data Storage/Buffer Management/Buffer Replacement Strategies/If there's more than one frame with a pin count of 0/LRU.md) replacement
+	- Access Time↔Optional - used for LRU replacement
 - A Loading Time
-	- Loading Time↔Optional - used for [FIFO](Advanced Databases/Week 2/Data Storage/Buffer Management/Buffer Replacement Strategies/If there's more than one frame with a pin count of 0/FIFO.md) replacement
+	- Loading Time↔Optional - used for FIFO replacement
 - A Clock Flag
 	- Clock Flag↔Optional - used for Clock replacement
 
@@ -225,7 +225,7 @@ CD=$\frac{\$D}{XI}$
 	- CD→Cost if we keep that block on disk
 	- I→Number of IOs that unit can perform per second
 
-### Assuming a block is accessed every $X$ seconds ↓ 
+### Assuming a block is accessed every $X$ seconds
 $CM=\frac{\$M}{P}$
 - Where
 	- CM→Cost if we keep that block in RAM
@@ -438,7 +438,7 @@ Maps database addresses to memory addresses
 ##### Pointer Swizzling
 General term for techniques used to translate database address space to virtual memory address space
 
-[Translation Table](Advanced Databases/Week 2/Data Storage/Disk Organisation/Blocks/Address Management/Translation Table.md) is used to **convert pointers** (and to record the conversion)
+Translation Table is used to **convert pointers** (and to record the conversion)
 
 Swizzling
 
@@ -450,7 +450,7 @@ Automatic
 - As soon as block brought into memory, locate all pointers and addresses and enter them into translation table
 
 No Swizzling ↓ 
-- Use [Translation Table](Advanced Databases/Week 2/Data Storage/Disk Organisation/Blocks/Address Management/Translation Table.md) to map pointers on each dereference
+- Use Translation Table to map pointers on each dereference
 
 On Demand
 - Leave all pointers unswizzled when block is brought into memory
@@ -464,7 +464,7 @@ Swizzled pointers typically consist of
 Rewrite memory addresses as database addresses
 - Reverse of the swizzling operation
 
-Done by using the [Translation Table](Advanced Databases/Week 2/Data Storage/Disk Organisation/Blocks/Address Management/Translation Table.md) in the reverse direction
+Done by using the Translation Table in the reverse direction
 
 The Unswizzling-Unpinning Relationship
 - However, a block may be pinned if there are swizzled pointers that point to that block

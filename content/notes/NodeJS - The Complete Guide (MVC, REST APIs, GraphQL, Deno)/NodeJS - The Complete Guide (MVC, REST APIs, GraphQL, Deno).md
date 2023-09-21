@@ -1,3 +1,10 @@
+# Concepts
+
+- [NodeJS](NodeJS.md)
+- [JavaScript](JavaScript.md)
+
+---
+
 NodeJS is a JavaScript runtime
 - Built on top of JavaScript
 - Allows you to run JavaScript code on the server, or anywhere else
@@ -11,7 +18,7 @@ NodeJS uses V8
 
 NodeJS adds features to V8
 
-![|700](notes/NodeJS%20-%20The%20Complete%20Guide%20%28MVC,%20REST%20APIs,%20GraphQL,%20Deno%29/Images/Pasted%20image%2020230920131200.png)
+![](notes/NodeJS%20-%20The%20Complete%20Guide%20%28MVC,%20REST%20APIs,%20GraphQL,%20Deno%29/Images/Pasted%20image%2020230920131200.png)
 
 # JavaScript
 

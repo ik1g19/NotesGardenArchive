@@ -3,7 +3,6 @@ title: "Advanced Computer Networks ToC"
 ---
 
 # **Week 1**
-#### [[notes/Uni Content/Advanced Computer Networks/Week 1/Introduction]]
 #### 📡[[notes/Uni Content/Advanced Computer Networks/Week 1/Radio Fundamentals]]📖
 ---
 # **Week 2**

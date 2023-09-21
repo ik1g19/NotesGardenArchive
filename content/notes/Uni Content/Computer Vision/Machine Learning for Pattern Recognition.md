@@ -1,10 +1,19 @@
 ---
 title: Machine Learning for Pattern Recognition
 ---
+# Concepts
 
+- [Machine Learning](Machine%20Learning.md)
+- [Feature Vector](Feature%20Vector.md)
+- [KNN](KNN.md)
+- [K Means](K%20Means.md)
+
+---
 # Feature Spaces
 Many computer vision applications involving machine learning take the following form
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/TPDSN8DLRM72geLmCJQL2cxPQwM3-oGKro6cHjmKi7P4nk2rx30F9gx0pDUEJXDknWKCKHe56fnlEGn2iodX0btCv5kaPRnpPl0tXsYkwbYzo3axmOwdGTnPFTzWwWtI.png) 
+
 Feature Extractor - Where cool image processing happens
 - Make featurevectors from image
 Machine Learning - Uses feature vectors to make intelligent decisions

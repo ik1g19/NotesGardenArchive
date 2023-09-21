@@ -113,7 +113,7 @@ Requires a smaller index
 
 Can miss records
 
-### Sparse Index Approach #2 ↓ 
+### Sparse Index Approach #2 
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/cfhBxWfdwUNbZpBUvppALgqxqHFjZfWhEbAdr5Ciq0uVwRqzW1OrR2sI0dVtVsmS8jqsRXix34jvQvj5MqZzBq1lZdHu1b4L33LbZAm62pLdZUIWhop3Zq2XV8yENHfN.png) 
 

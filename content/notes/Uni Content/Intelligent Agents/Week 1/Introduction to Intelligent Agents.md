@@ -4,13 +4,13 @@ title: "Introduction to Intelligent Agents"
 
 # Agents and Environments
 
-## Agents #flashcard
+## Agents 
 A computer system capable of autonomous action in some environment, in order to achieve its delegated goals
 
-#### autonomy #flashcard 
+#### autonomy 
 Capable of independent action without need for constant intervention
 
-#### delegation #flashcard 
+#### delegation
 Acts on behalf of its user or owner
 
 ![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221007150609.png)
@@ -20,7 +20,7 @@ An agent **acts** on the environment through {actuators}
 
 ## Intelligent Agents
 
-Exhibit, at least: #flashcard 
+Exhibit, at least:
 - Reactive behaviour
 - Pro-active behaviour
 - Social behaviour
@@ -30,25 +30,25 @@ Exhibit, at least: #flashcard
 #### Reactive
 Most environments are dynamic
 
-A reactive system maintains an ongoing interaction with its environment and responds to changes that occur in it #flashcard 
+A reactive system maintains an ongoing interaction with its environment and responds to changes that occur in it 
 
-#### Pro-activeness #flashcard 
+#### Pro-activeness 
 - Generating and attempting to achieve goals
 - Not driven solely by events
 - Taking the initiative
 - Recognising oppurtunities
 
-#### Social Ability #flashcard 
+#### Social Ability
 The ability in agents to interact with other agents and humans via cooperation, coordination and negotiation
 
 The real world is a multi-agent environment
 Cannot attempt to achieve goals without taking others into account
 Some goals can only be achieved by interacting with others
 
-#### Rationality #flashcard 
+#### Rationality 
 Agents will act in order to maximise (expected) utility
 
-#### Learning/Adaptation #flashcard 
+#### Learning/Adaptation
 Agents improve performance over time
 
 ### Challenges
@@ -57,8 +57,8 @@ Agents improve performance over time
 - How to learn and adapt and improve over time
 
 ## Multi-Agent System (MAS)
-Consists of a number of [[#Agents flashcard|Agent]]s
-[[#Agents flashcard|Agents]] will act on behalf of users with different goals and motivations with one-another
+Consists of a number of Agents
+Agents will act on behalf of users with different goals and motivations with one-another
 To successfully interact agents require the ability to
 - Cooperate
 - Coordinate
@@ -71,21 +71,15 @@ To successfully interact agents require the ability to
 
 ### Collaborative vs Self-Interested
 
-#### Collaborative #flashcard 
+#### Collaborative 
 - Agents owned by the same operson/organisation
 - Agent design can be controlled and made to coordinate
 - More robust compared to 'centralised' system
 - Agents easy to control - no incentive needed
 
-#### self-interested/competitive #flashcard 
+#### self-interested/competitive
 - Each agent works on behalf of someone else
 - Each agent design is different - no control of design of other agents
 - Each agents pursues own goals
 - Still need to cooperate
 - Need mechanisms for resolving conflicts of interest
-
-
-
-
-# Tags
-FILE TAGS intelligentAgents

@@ -60,7 +60,7 @@ $$N_{x,y}=exp(O_{x,y})$$
 What does it do?→Performs an exponential operation on each point
 
 # Intensity Normalisation
-Intensity [[Normalisation]] - Aim is to use all available grey levels for display
+Intensity Normalisation - Aim is to use all available grey levels for display
 ## Intensity Normalisation Process
 Original Histogram
 
@@ -142,10 +142,10 @@ What is it?
 
 $$N_{x,y}=\begin{cases}255 & if & N_{x,y}>threshold\\0 & otherwise\end{cases}$$
 
-[[Thresholding]] at level 160
+Thresholding at level 160
 
 ![|200](https://remnote-user-data.s3.amazonaws.com/G5arlwbtidFIklArByboCOSPTzjKoLiLiTV_zc_rTs1LaLrs-XF_9u0_pwVDKW98N3nCxvrxtZmZ25XiUM_G4JKriKEP0N2nkP1XLxjB2nUBpFc8wF_InxDPV70WZ4x3.png) 
 
-[[Thresholding]] at level 127
+Thresholding at level 127
 
 ![|200](https://remnote-user-data.s3.amazonaws.com/nnLhSsmAFeImLUVie9DSrhVuK-QwxWduhOnhHG2kpmcEfc4lpnVOPA1PBmWuuPIHOO4mx2u7RYKh2WOQbURTCoBrFxJDYQvJfWcyRUK0kbLaVSVF8Ts8uhpXwiLO4WMB.png) 

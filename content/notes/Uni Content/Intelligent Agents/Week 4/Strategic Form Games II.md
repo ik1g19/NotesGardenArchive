@@ -69,14 +69,14 @@ The best response function $br_1(y)$ for player 1 is $$br_1(y)=argmax_{x\in[0,1]
 The best response function $br_2(x)$ for player 2 is $$argmax_{y\in[0,1]}EU_2(x,y)$$
 The intersection between the best response functions will give the mixed Nash equilibria of the game
 #### Example
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173528.png]]
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221102173528.png)
 The game has 2 pure strategy Nash equilibria $(H,H)$ and $(T,T)$
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173637.png]]
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173653.png]]
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173802.png]]
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221102173637.png)
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221102173653.png)
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221102173802.png)
 The intersection of the graphs of $br_1(y)$ and $br_2(x)$ gives us the set of all equilibria of the game
 The pure strategy equilibria are included
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102174028.png]]
+![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221102174028.png)
 ### The Indifference Principle
 > [!Theorem (indifference principle)]
 > Let $(\sigma_1,...,\sigma_n)$ be a mixed Nash equilibrium of a strategic-form game, and let $s_i$ and $s_i'$ be two pure strategies of player $i$

@@ -112,8 +112,8 @@ A social choice function $f$, is manipulable if, for some preference ordering pr
 - A voter can obtain a better outcome for themselves by unilateraly changing their preference profiles
 - By misreporting their preferences to the voting procedure
 
-Although voting procedures are maniuplable, their manipulation is computationaly complex
-- Not easy to maniuplate some voting procedures intelligently
+Although voting procedures are manipulable, their manipulation is computationaly complex
+- Not easy to manipulate some voting procedures intelligently
 - Various unknowns
 - Computing a lie can be costly
 ## Gibbard-Satterthwaitte's Theorem

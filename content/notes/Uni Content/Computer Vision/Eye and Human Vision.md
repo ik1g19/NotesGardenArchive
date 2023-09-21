@@ -1,7 +1,6 @@
 ---
 title: "Eye and Human Vision"
 ---
-
 # A framework for computer vision!
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/3JOwjXF2z6LMeO9hpM9LGLyMDpUr3owtjOBVBbIyRun7CD_ngzmf4a9S5PSaqiz2DGU0pYLYurrVCX_Nyo-0dizlELVQeceqvuhrXHYBjX76iOWBozpXfMQK3umnljJg.png) 
