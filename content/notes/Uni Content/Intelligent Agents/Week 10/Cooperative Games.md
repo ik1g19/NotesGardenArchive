@@ -33,10 +33,10 @@ It is usually assumed that the agents form the grand coalition
 >[!Tip]
 >A game is super additive if the agents can earn more in a coalition than their individual parts combined
 #### Example 1
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114221444.png]]
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114221457.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114221444.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114221457.png]]
 #### Example 2
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114221522.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114221522.png]]
 ## Simple Games
 >[!Definition]
 >A coalitional game $(N,v)$ is called *simple* if for each coalition $S$, either $v(S)=0$ or $v(S)=1$
@@ -46,7 +46,7 @@ A coalition $S$ is called *winning* if $v(S)=1$ and is called losing if $v(S)=0$
 Sometimes it is convenient to represent simple games by indicating the family of winning coalitions $$W=\{S\subseteq N\text{ }|\text{ }v(S)=1\}$$
 Simple games can model committee votes
 #### Example
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114222113.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114222113.png]]
 ## Weighted Majority Games
 Weighted majority games are a special case of simple games
 >[!Definition]
@@ -57,8 +57,8 @@ Weighted majority games are a special case of simple games
 
 A weighted majority game can be given an *explicit representation* denoted by $$[q;w_1,...,w_n]$$
 #### Example
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114222245.png]]
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114223051.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114222245.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114223051.png]]
 
 # Outcomes
 >[!Definition]
@@ -68,7 +68,7 @@ A weighted majority game can be given an *explicit representation* denoted by $$
 
 We denote the space of coalition structures over $N$ by $CS_N$
 
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230114223554.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114223554.png]]
 
 >[!Definition]
 >Given a coalition game $(N,v)$, a vector $x=(x_1,...,x_n)\in\mathbb{R}^n$ such that $$x_i \geq 0$$
@@ -106,7 +106,7 @@ We evaluation outcomes following different criteria
 # The Core
 Consider a coalitional game $(N,v)$ and an outcome $(CS,x)$ where $x$ is an imputation
 If $x(S)<v(S)$ for some coalition $S$, the agents in $S$ could do better by abandoning the coalition structure $CS$ and forming a coalition of their own
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230115183207.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230115183207.png]]
 This outcome is unstable because some players will have an incentive to break the coalition structure
 
 >[!Definition]
@@ -119,9 +119,9 @@ For superadditive games, the core contains outcomes based on the grand coalition
 - $x(S)\geq v(S)$ for all $S\subseteq N$
 
 #### Example
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020230115183811.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020230115183821.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020230115183833.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230115183811.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230115183821.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230115183833.png)
 
 ## Games with an Empty Core
 Consider the following three-player majority game $(N,v)$ where $$N=\{1,2,3\}$$ and $$v(S)\begin{cases}1 & |S|\geq 2\\ 0 & |S|< 2\\\end{cases}$$ for all $S\subseteq N$
@@ -139,9 +139,9 @@ The Shapley value is a solution concept that tries to capture the notion of fair
 It is usually formulated with respect to the grand coalition and it assigns to every coalition game an imputation
 Based on the inutation that the payment that each agent recieves should be proptional to their contribution
 
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020230115185756.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020230115185812.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020230115185843.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230115185756.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230115185812.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230115185843.png)
 
 The *marginal contribution* of an agent $i$ with respect to a permutation $\pi$ in a coalitional game $(N,v)$ is denoted by $\Delta_\pi^{(N,v)}(i)$ and given by $$\Delta_\pi^{(N,v)}(i)=v(S_\pi (i)\cup \{i\})-v(S_\pi (i))$$
 This quantity measures by how much $i$ increases the value of the coalition consiting of its predecessors when $i$ joins the coalition
@@ -151,7 +151,7 @@ We define the Shapley value of a player $i$ as the average marginal contribution
 >Given a coalitional game $(N,v)$ with $|N|=n$, the Shapley value fo a player $i\in N$ denoted by $Sh_i(N,v)$ is given by $$Sh_i(N,v)=\frac{1}{n!}\sum\limits_{\pi\in \Pi_N}\Delta_\pi^{(N,v)}(i)$$
 
 #### Example
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230115190520.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230115190520.png]]
 
 ## Properties of the Shapley Value
 The Shapley value is efficient
@@ -183,7 +183,7 @@ We have seen that the Shapley value has the following properties
 - Symmetry
 - Additivity
 These properties can be used to simplify the computation of the Shapley value
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230115201651.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230115201651.png]]
 
 # The Banzhaf Index
 Another solution concept motivated by fairness
@@ -202,4 +202,4 @@ The Banzhaf index and Shapley value measure the power of a player
 A player is said to be *pivotal* for a coalition $S\subseteq N$ in a game $(N,v)$, if $v(S)=1$ and $v(S\setminus \{i\})=0$
 A player is *pivotal* for a permutation $\pi:N\rightarrow N$ if it is pivotal for the coalition $S_\pi (i)\cup\{i\}$ consisting of the player and the predecessor
 
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20230115202847.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20230115202847.png]]

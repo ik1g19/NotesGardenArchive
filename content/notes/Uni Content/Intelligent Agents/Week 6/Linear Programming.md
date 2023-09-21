@@ -25,8 +25,8 @@ The value of the objective function given a setting of variables is called an **
 Any setting of variables that satisfies all the constraints is called **feasible solution**
 
 #### example
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221118153844.png)
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221118153910.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221118153844.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221118153910.png)
 
 ## Methods for solving LPs
 - Simplex Method

@@ -3,7 +3,7 @@ title: "Linear Programming II"
 ---
 
 # Computing the Nash Equilibrium of a two-player zero-sum Game
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221122180841.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221122180841.png)
 **Zero-Sum** - Utilities add up to 0
 Expected utility for player 1 will be:
 - If player 2 picks 'Security' -> $3x-2(1-x)$
@@ -58,13 +58,13 @@ If the set of constraints is infeasible, the linear program has no solutions
 A linear program is unbounded if it has some feasible solutions but does not have a finite optimal objective value
 
 ## Unique Solutions
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221124142038.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221124142038.png)
 
 ## Multiple Solutions
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221124142102.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221124142102.png)
 
 ## Unbounded Solutions
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221124142125.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221124142125.png)
 
 ## Standard vs Slack Linear Programs
 ### Standard Form

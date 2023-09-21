@@ -56,7 +56,7 @@ This is not the case for mixed Nash equilibria
 > [!Theorem (Daskalakis, Goldberg, Papadimitriou, 2009)]
 > Finding mixed Nash equilibria in a strategic-form game is PPAD-cmplete
 ## 2 x 2 Games
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221102173113.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173113.png]]
 We represent a mixed strategy for player 1 as $x\in [0,1]$
 - Play $T$ with probability $x$
 - Play $B$ with probability $1-x$
@@ -69,14 +69,14 @@ The best response function $br_1(y)$ for player 1 is $$br_1(y)=argmax_{x\in[0,1]
 The best response function $br_2(x)$ for player 2 is $$argmax_{y\in[0,1]}EU_2(x,y)$$
 The intersection between the best response functions will give the mixed Nash equilibria of the game
 #### Example
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221102173528.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173528.png]]
 The game has 2 pure strategy Nash equilibria $(H,H)$ and $(T,T)$
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221102173637.png]]
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221102173653.png]]
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221102173802.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173637.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173653.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102173802.png]]
 The intersection of the graphs of $br_1(y)$ and $br_2(x)$ gives us the set of all equilibria of the game
 The pure strategy equilibria are included
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221102174028.png]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221102174028.png]]
 ### The Indifference Principle
 > [!Theorem (indifference principle)]
 > Let $(\sigma_1,...,\sigma_n)$ be a mixed Nash equilibrium of a strategic-form game, and let $s_i$ and $s_i'$ be two pure strategies of player $i$
@@ -96,7 +96,7 @@ Each player is indifferent to playing a pure strategy over another
 >You can use the indifference principle to show a set of strategies does not form a mixed nash equilibirum
 >Show that the expected utility of the player's strategies are not equal, since they are not equal - they cannot form a mixed nash equilibrium
 #### Example
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107122216.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107122216.png)
 ### The Indifference Principle (2x2)
 > [!Theorem]
 > A pair of probability distributions $(x,y)\in (0,1)^2$ is a mixed Nash Equilibrium in the generic $2\times 2$ game if and only if $$EU_1(T,y)=EU_1(B,y)\text{ and }EU_2(L,x)=EU_2(R,x)$$
@@ -107,7 +107,7 @@ This provides a method finding completely mixed Nash equilibria
 Any pair of solutions $(x,y)\in (0,1)^2$ is a mixed Nash equilibrium
 We are dealing with linear inequalities, so we can solve them in polynomial time
 #### example
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107122957.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107123131.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107123158.png)
-![|500](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221107123408.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107122957.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107123131.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107123158.png)
+![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221107123408.png)

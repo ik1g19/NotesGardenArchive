@@ -76,9 +76,9 @@ The utiity is given by $$u_i(\theta_i)=\biggr\{
 \end{array}$$
 The expected utility given by bid $b_i$ is then $$E[u_i(\theta_i)|b_i]=(\theta_i-b_i)F(b_i)$$
 ## Exercise: Discrete Bids
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221207180005.png|450]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221207180005.png|450]]
 ## Solution
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221207180031.png|450]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221207180031.png|450]]
 ## Optimal Bid for Continuous Bid Distributions
 Using the equations from [[#First-Price Auction]]
 
@@ -96,9 +96,9 @@ Let $f(b)=F(b+1)-F(b)$ denote the probability that the highest opponent bid is e
 The expected utility given bid $b_i$ is then: $$E[u_i(\theta_i)|b_i]=\theta_iF(b_i)-\sum\limits_{b=0}^{b_i-1}b\cdot f(b)$$
 According to our tie breaking rule $i$ loses if tied with the highest opponent bid, to compute the expected payment we have to consider only cases where the highest opponent bid is at most $b_i-1$
 ## Exercise: Discrete Bids
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221208133946.png|450]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208133946.png|450]]
 ## Solution
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221208134018.png|450]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208134018.png|450]]
 ## Continuous Bids
 Using the equations from [[#Vickrey Auction]]
 For continuous distributions, $f$ is the probability density, and we replace the sum by the integral.
@@ -123,14 +123,14 @@ Such an auction is called
 - Incentive-compatible in dominant strategies
 
 ### Proof
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221208143548.png|450]]
-![[content/notes/Uni Content/Intelligent_Agents/Images/Pasted image 20221208143614.png|450]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208143548.png|450]]
+![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208143614.png|450]]
 
 # Dutch Auction
 Here strategy $s(\theta_i)$ is the point at which you bid when the clock reaches the vlaue $s(\theta_i)$
 ## First-Price Sealed-Bid Auction vs. Dutch Auction
 In both auctions, if $i$ is the winner they pay $s(\theta_i)$
-The amount of available information in both cases is the same [[content/notes/Uni Content/Intelligent_Agents/Week 8/Notes/Pins/📌₈.₁]]
+The amount of available information in both cases is the same [[content/notes/Uni Content/Intelligent Agents/Week 8/Notes/Pins/📌₈.₁]]
 Therefor the optimal strategies in Dutch and first-price sealed-bid auctions are identical
 These auctions are said to be **strategically equivalent**
 # English Auction

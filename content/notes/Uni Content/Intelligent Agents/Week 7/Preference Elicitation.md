@@ -84,12 +84,12 @@ Usually assumed that $g_i$'s are known
 Goal is to find the agent's preference ordering
 Use the partial preference ordering and a set of parameters (i.e. $u_i$'s) that respect the partial information found to generate a complete preference ordering
 
-**UTA** - The first and well-known additive [[content/notes/Uni Content/Intelligent_Agents/Week 7/Notes/Ordinal Regression]] method
+**UTA** - The first and well-known additive [[content/notes/Uni Content/Intelligent Agents/Week 7/Notes/Ordinal Regression]] method
 - Assumes that the agent knows their complete preference ordering over a set of reference outcomes (or alternatives) $O^R\subseteq O$
 - Among many compatible additive value functions that are consistent with the partial preference information, only one is selected and used to generate a complete preference ordering
 - Assumes that marginal value functions $u_i$'s are piecewise-linear
 
-**UTA$^{GMS}$** - The first method of robust additive [[content/notes/Uni Content/Intelligent_Agents/Week 7/Notes/Ordinal Regression]]
+**UTA$^{GMS}$** - The first method of robust additive [[content/notes/Uni Content/Intelligent Agents/Week 7/Notes/Ordinal Regression]]
 - The agents ranking of reference outcomes does not need to be complete
 - Takes into consideration the whole set of compatible additive value functions
 - Marginal value functions are general non-decreasing functions
@@ -132,8 +132,8 @@ $$\begin{array}{l}
 $$\sum\limits_{i=1}^nu_i(\beta_i)=1$$
 
 #### Example
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221125175642.png)
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221125180245.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221125175642.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221125180245.png)
 
 ### Solution or No Solution
 If the optimal value of the objective function is equal to zero (i.e. if all $\sigma^+(c)'s$ and $\sigma^-(c)'s$ are set to zero), then there exists at least one value function $U(o)=\sum\limits_{i=1}^{n}u_i(\sigma_i)$ compatible with the preference ordering on $O^R$
@@ -168,7 +168,7 @@ For any $a,b\in O^R$
 - If $\alpha\succ b\Rightarrow \neg(b \succeq^p a)$
 
 ## Constraints for a Compatible Value Function
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221205153020.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221205153020.png)
 
 ## Turning $E^{A^R}$ into a Linear Program
 Use the same trick as used for UTA, we can rewrite the first set of constraints as $$U(c)\geq U(d)+\epsilon \Leftrightarrow c \succ d$$ for an aribitrarily small $\epsilon$
@@ -179,12 +179,12 @@ For all pairs of outcomes $(a,b)\in O \times O$, let $\pi_i$ be a permutation of
 Fix the characteristic points of $u_i,i=1,...,n$ in $g_i^0=\alpha_i$, $g_i^j=g_i(a_{\pi_i(j)})$ for $j=1,...,w$, $g_i^{w+1}=\beta_i$
 
 ## Ordinal Regression Constraints $E(a,b)$
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221205161107.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221205161107.png)
 
 ## Linear Programs to compute $\succeq^N$
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221205161229.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221205161229.png)
 ## Linear Program to compute $\succeq^p$
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221205161328.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221205161328.png)
 ## Summary of $UTA^{GMS}$
 
-![|450](content/notes/Uni%20Content/Intelligent_Agents/Images/Pasted%20image%2020221205161438.png)
+![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221205161438.png)
