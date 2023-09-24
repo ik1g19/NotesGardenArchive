@@ -438,3 +438,220 @@ The benefit of local dependencies is that you can share projects without the `no
 
 You could install a package globally with the `-g` flag
 
+# Express.js
+
+Simplifies server logic
+
+Alternatives to Express:
+- Adonis.js
+- Koa
+- Salis.js
+
+import with `const express = require('express');`
+
+Create the app with `express()`
+
+The created app can be used as a request handler
+
+```node
+const app = express();
+const server = http.createServer(app);
+```
+
+## Middleware
+
+The function passed to `app.use((req, res, next) => {})` will be used to handle every request
+
+`next` is a function that will be executed to allow the request to travel on to the next middleware
+
+```node
+app.use((req, res, next) => {
+	console.log('In the middleware');
+	next();
+});
+
+app.use((req, rest, next) => {
+	console.log('Another middleware');
+});
+```
+
+If `next` was not called then only the first middleware would be executed upon a request
+
+`send()` is used to send responses (by default `text/html`)
+
+```node
+app.use((req, res, next) => {
+	console.log('In the middleware');
+	next();
+});
+
+app.use((req, rest, next) => {
+	console.log('Another middleware');
+	res.send('<h1>Test Header</h1>');
+});
+```
+
+Instead of using:
+
+```node
+const server = http.createServer(app);
+server.listen(3000);
+```
+
+We can use:
+
+```node
+app.listen(3000);
+```
+
+## Handling Different Routes
+
+`app.use('/', (req, res, next) => {});` means that every routing starting with a `/` will be handled
+- Not to be confused with exactly being the route `/`
+
+So to handle a route whilst also handling the root path, you need to route the root path last
+
+```node
+app.use('/add-product', (req, res, next) => {
+  console.log('In another middleware!');
+  res.send('<h1>The "Add Product" Page</h1>');
+});
+
+app.use('/', (req, res, next) => {
+  console.log('In another middleware!');
+  res.send('<h1>Hello from Express!</h1>');
+});
+```
+
+To have code that will execute every time:
+
+```node
+app.use('/', (req, res, next) => {
+    console.log('This always runs!');
+    next();
+});
+
+app.use('/add-product', (req, res, next) => {
+  console.log('In another middleware!');
+  res.send('<h1>The "Add Product" Page</h1>');
+});
+
+app.use('/', (req, res, next) => {
+  console.log('In another middleware!');
+  res.send('<h1>Hello from Express!</h1>');
+});
+```
+
+## Parsing Incoming Requests
+
+Package needed in order to parse requests:
+
+```
+npm install --save body-parser
+```
+
+And import with:
+
+```node
+const bodyParser = require('body-parser');
+```
+
+To then parse the request you pass it to the app handler:
+
+```node
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.use('/add-product', (req, res, next) => {
+  res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>');
+});
+
+app.post('/product', (req, res, next) => {
+    console.log(req.body);
+    res.redirect('/');
+});
+
+app.use('/', (req, res, next) => {
+  res.send('<h1>Hello from Express!</h1>');
+});
+```
+
+`app.use` would be used for every request, regardless of if it was GET or POST
+
+So to filter requests we use `app.get` or `app.post`
+
+## Using Express Router
+
+Typically we want to split our routing code over multiple files
+
+Routing related code typically goes under the `routes` folder
+
+Add `admin.js` and `shop.js`
+- These will control routing for normal and admin users
+
+Create an express router with `const router = express.Router()`
+
+Use this to handle the admin requests in `admin.js`:
+
+```node
+app.use('/add-product', (req, res, next) => {
+  res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>');
+});
+
+app.post('/product', (req, res, next) => {
+    console.log(req.body);
+    res.redirect('/');
+});
+
+app.use('/', (req, res, next) => {
+  res.send('<h1>Hello from Express!</h1>');
+});
+```
+
+And in `shop.js`:
+
+```node
+const express = require('express');
+
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+  res.send('<h1>Hello from Express!</h1>');
+});
+
+module.exports = router;
+```
+
+We can then `require` the exported modules from the main app and `use` the routing:
+
+```node
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.use(adminRoutes);
+app.use(shopRoutes);
+
+app.listen(3000);
+```
+
+## Adding a 404 Page
+
+We want to add a 'catch all' middleware at the bottom
+
+```node
+...
+app.use(adminRoutes);
+app.use(shopRoutes);
+
+app.use((req, rest, next) => {
+	res.status(404).send('<h1>Page not found</h1>');
+})
+
+app.listen(3000);
+```
