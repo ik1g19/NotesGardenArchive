@@ -17,7 +17,7 @@ enableToc: false
 
 # Courses
 
-#### [NodeJS](content/notes/NodeJS/NodeJS.md)
+#### [NodeJS](notes/NodeJS/NodeJS.md)
 
 # Interview Notes
 
