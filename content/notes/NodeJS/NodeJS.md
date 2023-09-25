@@ -1,6 +1,6 @@
 # Concepts
 
-- [NodeJS](NodeJS.md)
+- [NodeJS](content/concepts/NodeJS.md)
 - [JavaScript](JavaScript.md)
 
 ---
@@ -18,7 +18,7 @@ NodeJS uses V8
 
 NodeJS adds features to V8
 
-![](notes/NodeJS%20-%20The%20Complete%20Guide%20%28MVC,%20REST%20APIs,%20GraphQL,%20Deno%29/Images/Pasted%20image%2020230920131200.png)
+![](Pasted%20image%2020230920131200.png)
 
 # JavaScript
 
@@ -92,7 +92,6 @@ const person = {
 };
 
 person.greet();
-
 ```
 
 Arrow notation would not work for greet
@@ -297,7 +296,7 @@ server.listen(3000);
 
 ## Parsing Request Bodies
 
-![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920144619.png)
+![](Pasted%20image%2020230920144619.png)
 
 `on()` allows us to listen for certain events
 
@@ -333,9 +332,9 @@ Sometimes functions passed as parameters will be executed asynchronously (later)
 
 ## Single Thread, Event Loop and Blocking Code
 
-![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920150931.png)
+![](Pasted%20image%2020230920150931.png)
 
-![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920151347.png)
+![](Pasted%20image%2020230920151347.png)
 
 `refs` increments by 1 for every new callback that is registered, and reduces it by 1 for every event listener it doesn't need anymore
 
@@ -413,7 +412,7 @@ exports.someText = 'Some hard coded text';
 
 ## Summary
 
-![](notes/NodeJS%20-%20The%20Complete%20Guide%20(MVC,%20REST%20APIs,%20GraphQL,%20Deno)/Images/Pasted%20image%2020230920152401.png)
+![](Pasted%20image%2020230920152401.png)
 
 # Improved Development Workflow and Debugging
 
@@ -655,3 +654,432 @@ app.use((req, rest, next) => {
 
 app.listen(3000);
 ```
+
+## Filtering Paths
+
+You can filter by paths at the `use` level
+
+```node
+app.use('/admin', adminRoutes);
+app.use(shopRoutes);
+```
+
+This means that any paths after this will be /admin/path
+
+```node
+router.get('/add-product', (req, res, next) => {
+  res.send(
+    '<form action="/admin/add-product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>'
+  );
+});
+
+router.post('/add-product', (req, res, next) => {
+  console.log(req.body);
+  res.redirect('/');
+});
+```
+
+It is not necessary to repeat /admin once it has been filtered
+
+So the examples above are actually for /admin/add-product
+
+## Creating and Serving HTML Pages
+
+Create a folder called `views` to contain HTML files you want to serve
+
+Example:
+
+`add-product.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Shop</a></li>
+                <li><a href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/add-product" method="POST">
+            <input type="text" name="title">
+            <button type="submit">Add Product</button>
+        </form>
+    </main>
+</body>
+
+</html>
+```
+
+`shop.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Shop</a></li>
+                <li><a href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Products</h1>
+        <p>List of all the products...</p>
+    </main>
+</body>
+
+</html>
+```
+
+We can now serve these HTML pages using `sendFile`
+
+By default `/` references the root directory on the operating system, so `path` is used to reference the current working directory
+
+`admin.js`
+
+```node
+const path = require('path');
+
+const express = require('express');
+
+const router = express.Router();
+
+// /admin/add-product => GET
+router.get('/add-product', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html'));
+});
+
+// /admin/add-product => POST
+router.post('/add-product', (req, res, next) => {
+  console.log(req.body);
+  res.redirect('/');
+});
+
+module.exports = router;
+```
+
+`shop.js`
+
+```node
+const path = require('path');
+
+const express = require('express');
+
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../', 'views', 'shop.html'));
+});
+
+module.exports = router;
+```
+
+## Serving File Statically
+
+Create a folder `public` to hold all the files accessible to the client
+
+This folder will hold css content for pages
+
+Serving files **statically** - Serving files not through the router, but directly from the file system
+
+Use:
+
+```node
+app.use(express.static(path.join(__dirname, 'public')));
+```
+
+To grant 'read access' (serve statically) the public folder
+
+When referencing the stylesheet, you do not need to include /public as node will already be working within this folder as the folder `public` is being served
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a class="active" href="/">Shop</a></li>
+                <li class="main-header__item"><a href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Products</h1>
+        <p>List of all the products...</p>
+    </main>
+</body>
+
+</html>
+```
+
+## Summary
+
+![](Pasted%20image%2020230925215649.png)
+
+# Dynamic Content and Template
+
+## Templating Engines
+
+![](Pasted%20image%2020230925220915.png)
+
+### Available Engines
+
+![](Screenshot%20from%202023-09-25%2022-11-27.png)
+
+## Installing and Implementing Pug
+
+`npm install --save ejs pug express-handlebars`
+
+`app.set` allows us to set a global configuration value
+
+```node
+app.set('view engine', 'pug');
+```
+
+The default locations for views is `/views/`
+
+We can specify a custom location with:
+
+```node
+app.set('views', 'views');
+```
+
+Create `shop.pug` under `views/` - this will hold the template that pug will convert to HTML
+
+`shop.pug`
+
+```
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title My Shop
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/product.css")
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a.active(href="/") Shop
+                    li.main-header__item
+                        a(href="/admin/add-product") Add Product
+```
+
+Since this is now using a templating engine, we don't use `sendFile`
+
+We now use `render` (in `shop.js`):
+
+```node
+router.get('/', (req, res, next) => {
+  res.render('shop');
+});
+```
+
+## Outputting Dynamic Content
+
+We can share variables between requests by exporting them (`admin.js`):
+
+```node
+const path = require('path');
+
+const express = require('express');
+
+const rootDir = require('../util/path');
+
+const router = express.Router();
+
+const products = [];
+
+// /admin/add-product => GET
+router.get('/add-product', (req, res, next) => {
+  res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+});
+
+// /admin/add-product => POST
+router.post('/add-product', (req, res, next) => {
+  products.push({ title: req.body.title });
+  res.redirect('/');
+});
+
+exports.routes = router;
+exports.products = products;
+```
+
+And then requiring them (`shop.js`):
+
+```node
+const path = require('path');
+
+const express = require('express');
+
+const rootDir = require('../util/path');
+const adminData = require('./admin');
+
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+  const products = adminData.products;
+  res.render('shop', {prods: products, docTitle: 'Shop'});
+});
+
+module.exports = router;
+```
+
+We can pass dynamic content to the `render` function as a js object with key-value pairs
+
+In this case we are passing a list of products, which hold a value `title`
+
+We can then handle this content in `shop.pug`:
+
+```
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{docTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/product.css")
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a.active(href="/") Shop
+                    li.main-header__item
+                        a(href="/admin/add-product") Add Product
+
+        main
+            if prods.length > 0
+                .grid
+                    each product in prods
+                        article.card.product-item
+                            header.card__header
+                                h1.product__title #{product.title}
+                            div.card__image
+                                img(src="link_to_image", alt="A Book")
+                            div.card__content
+                                h2.product__price $19.99
+                                p.product__description A very interesting book about so many even more interesting things!
+                            .card__actions
+                                button.btn Add to Cart
+            else
+                h1 No Products
+```
+
+We reference a variable in pug using `#{}` e.g. `#{docTitle}`
+
+We then iterate through objects in pug with `each`
+
+The `if` statement is used to catch the case where no objects have been added
+
+## Using Pug Layouts
+
+Create a `layouts` subfolder under `views`
+
+This will contain the main layout of every page
+
+`main-layout.pug`
+
+```
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        block styles
+    body   
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a(href="/", class=(path === '/' ? 'active' : '')) Shop
+                    li.main-header__item
+                        a(href="/admin/add-product", class=(path === '/admin/add-product' ? 'active' : '')) Add Product
+        block content
+```
+
+`block` tags represent spaces where other pug files can extend the template and insert their own custom content
+
+Inline ifs are used to add the `active` class if the path of the page matches parameter `path` that is passed to the render function e.g. in `shop.js`
+
+```node
+router.get('/', (req, res, next) => {
+  const products = adminData.products;
+  res.render('shop', {prods: products, pageTitle: 'Shop', path: '/'});
+});
+```
+
+`add-product.pug`
+
+```
+extends layouts/main-layout.pug
+
+block styles
+    link(rel="stylesheet", href="/css/forms.css")
+    link(rel="stylesheet", href="/css/product.css")
+
+block content
+    main
+        form.product-form(action="/admin/add-product", method="POST")
+            .form-control
+                label(for="title") Title
+                input(type="text", name="title")#title
+            button.btn(type="submit") Add Product
+```
+
+`extends` is used to extend the pug template
+
+Content is inserted into `block`s with the `block` tags
+
+`404.pug`
+
+```
+extends layouts/main-layout.pug
+
+block content
+    h1 Page Not Found!
+```
+
