@@ -17,11 +17,11 @@ enableToc: false
 
 # Courses
 
-#### [[content/notes/NodeJS/NodeJS]]
+#### [NodeJS](content/notes/NodeJS/NodeJS.md)
 
 # Interview Notes
 
-#### [[content/notes/NodeJS Interview Questions/NodeJS Interview Questions|NodeJS Interview Questions]]
+#### [NodeJS Interview Questions](NodeJS%20Interview%20Questions.md)
 
 #### [[C Sharp and Dot Net Interview Concepts]]
 
