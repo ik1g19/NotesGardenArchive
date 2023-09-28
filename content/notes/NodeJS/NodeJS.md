@@ -1083,3 +1083,158 @@ block content
     h1 Page Not Found!
 ```
 
+## Working with Handlebars
+
+Uses normal HTML mixed with some templating logic
+
+Importing:
+
+```node
+const expressHbs = require('express-handlebars');
+```
+
+Using:
+
+```node
+app.engine('hbs', expressHbs());
+app.set('view engine', 'hbs');
+```
+
+Create a file with the extension of what you used in the above code, in this case `404.hbs`
+
+Dynamic content is then passed through render as a key-value js object in the same way
+
+Handlebar content is normal HTML code but dynamic content is represented with `{{}}`
+
+```html
+<title>{{ pageTitle }}</title>
+```
+
+Handlebars only supports True/False logic in its templating, so any calculations must be performed in js code and then passed to handlebar templating as a boolean
+
+```node
+res.render('shop', {prods: products, pageTitle: 'Shop', path: '/', hasProducts: products.length > 0})
+```
+
+```html
+{{#if hasProducts}}
+...
+{{else}}
+...
+{{/if}}
+```
+
+You can iterate in handlebars with `each`
+
+```html
+{{#each prods}}
+<h1 class="product_title">{{ this.title }}</h1>
+{{/each}}
+```
+
+## Using Handlebar Layouts
+
+`main-layout.hbs`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ pageTitle }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {{#if formsCSS}}
+        <link rel="stylesheet" href="/css/forms.css">
+    {{/if}}
+    {{#if productCSS}}
+        <link rel="stylesheet" href="/css/product.css">
+    {{/if}}
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a class="{{#if activeShop }}active{{/if}}" href="/">Shop</a></li>
+                <li class="main-header__item"><a class="{{#if activeAddProduct }}active{{/if}}" href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+    {{{ body }}}
+</body>
+
+</html>
+```
+
+The only way to extend a layout is by inserting content into `{{{ body }}}`
+
+So `if` statements have to be used to dynamically insert styles
+
+e.g. `shop.js`:
+
+```node
+const path = require('path');
+
+const express = require('express');
+
+const rootDir = require('../util/path');
+const adminData = require('./admin');
+
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+  const products = adminData.products;
+  res.render('shop', {
+    prods: products,
+    pageTitle: 'Shop',
+    path: '/',
+    hasProducts: products.length > 0,
+    activeShop: true,
+    productCSS: true
+  });
+});
+
+module.exports = router;
+```
+
+Using handlebars in `app.js`:
+
+```node
+const path = require('path');
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const expressHbs = require('express-handlebars');
+
+const app = express();
+
+app.engine(
+  'hbs',
+  expressHbs({
+    layoutsDir: 'views/layouts/',
+    defaultLayout: 'main-layout',
+    extname: 'hbs'
+  })
+);
+app.set('view engine', 'hbs');
+app.set('views', 'views');
+
+const adminData = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/admin', adminData.routes);
+app.use(shopRoutes);
+
+app.use((req, res, next) => {
+  res.status(404).render('404', { pageTitle: 'Page Not Found' });
+});
+
+app.listen(3000);
+```
+

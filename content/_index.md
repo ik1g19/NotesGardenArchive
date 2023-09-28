@@ -25,6 +25,10 @@ enableToc: false
 
 #### [[C Sharp and Dot Net Interview Concepts]]
 
+#### [[Front End Development Questions]]
+
+#### [[Back End Development Questions]]
+
 # University Notes
 
 ## General Modules
