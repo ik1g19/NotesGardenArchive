@@ -8,6 +8,8 @@ title: Further Edge Detection
 ---
 
 Sobel is a good basic operator but has blurred and noisy edges
+
+Testing new change
 # Canny Edge Detection Operator
 ## Stages in Canny Edge Detection
 1. Gaussian Smoothing
