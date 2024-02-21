@@ -1,6 +1,12 @@
 
+# Concepts
+
+- [[Hough Transform]]
+
+---
+
 # Grouping points to find shapes
-## **Template Matching**
+## Template Matching
 
 ### Process of Template Matching
 
@@ -21,7 +27,7 @@ This process can be improved by just matching the edges
 But if only the edges are being matched, then only the text and symbols on the sign will be matched, producing much less noise
 
 In the example the template could match with some points in the road or the sky, producing some noise
-## **Template Matching in Occluded and Noisy Images**
+## Template Matching in Occluded and Noisy Images
 ### Occluded Images
 
 Template matching is optimal in occlusion
@@ -44,7 +50,7 @@ Shapes can be found in noise that is challenging for human vision
 Template matching is optimal in noise
 
 Shapes can be found in noise that is challenging for human vision
-## **Convolution and Correlation**
+## Convolution and Correlation
 
 Correlation is about matching templates
 
@@ -65,7 +71,7 @@ It involves flipping the template
 
 OR by multiplying the transforms
 - $I\cdot T = \mathscr{F}^{-1}(\mathscr{F}(I)\cdot \times \mathscr{F}(T))$
-## **Application of Correlation using FFT**
+## Application of Correlation using FFT
 
 ![|200](https://remnote-user-data.s3.amazonaws.com/t2hyTF8GQh35R3r2_M7PIURlCI3BoAHx-Im3Zz6bs3BgP1k_pO_mRWysK-IqBu5M0hGIFaotDa27ittn7CaKKcKGL8wkvfCX4UEFAzsCO_FFalFdfEfZK95VZtiLOwCy.png) 
 
@@ -84,7 +90,7 @@ OR by multiplying the transforms
 No sliding of templates
 
 Cost is 2xFFT plus multiplication
-## **[[Hough]] Transform**
+## Hough Transform
 
 Performs the same as template matching, but is faster
 ### The Principle of Duality 
@@ -106,20 +112,20 @@ A line can also be represented as
 If you apply this process to a set of points on a line in one space, you can generate a set of lines in another space. The crossing of these lines will be the values of m and c of the line in the original space
 
 This is called the principle of duality
-## **Pseudocode for [[Hough]] Transform**
+## Pseudocode for Hough Transform
 
 If a point is an edge, then the corresponding line for that point is plot in the accumulator space
 
 The crossing can be found by finding the point in the accumulator space with the highest value
 
 The code checks through all points in the image
-## **Applied [[Hough]] Transform**
+## Applied Hough Transform
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/pULoNjuq99lzfswOd68QhSbjSVgTwM9MhRMsDWt9tWZCYIN6aarcLvDQgTBNIvaWR78wj4iyVA4pN7dYoBg7Xi3ey8CT8i6i1LGHim3aHx3B3oT4NJqgsPfh1d_gZhP5.png) 
 
-This version of the [[Hough]] transform does not detect vertical lines
+This version of the Hough transform does not detect vertical lines
 - Because the gradient of the line would tend to infinity, so we would need infinite accumulator space
-## [[Hough]] Transform for all Lines
+## Hough Transform for all Lines
 
 ![|400](https://remnote-user-data.s3.amazonaws.com/D4lLuxt763s1AbgaTqr9Yqslgb-M3QzdeNI5kF21L7yTCRNfyxOyfz6HmKGF6f0ErH6UoWIsIZOT_JF0_myNPhUAe4XSxU1L7HyTNeZxQ_m_YC4xM7jjhhLEjQWy_Zjm.png) 
 

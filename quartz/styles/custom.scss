@@ -1,1 +1,14 @@
 // put your custom CSS here!
+:root[saved-theme="dark"] {
+  strong {
+    color: rgb(163,190,140); /* Text color for dark mode */
+  }
+  code {
+  	color: rgb(79,177,188);
+  }
+  em {
+  	color: rgb(235,203,139);
+  }
+}
+
+//163,190,140

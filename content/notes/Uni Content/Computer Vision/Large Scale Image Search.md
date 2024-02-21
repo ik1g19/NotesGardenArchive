@@ -62,6 +62,7 @@ Vector quantisation is achieved by representing a vector by another approximate 
 - Given a set of vectors, a technique like k-means clustering can be used to learn a fixed size set of representative vectors
 	- The representatives are the mean vector of each cluster in k-means
 	- The set of representation vectors is called a codebook
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/jIxoTIAowUE0KWqrc40o-zhQjhmbTZooyPivBbcKd5JY6UslisOPqcS6b-oZiSmtddVF1Cm-cQhRlFE0ZLMN26CGWqN4MW1h6f9jEzKdD9BSM2Du88AlFf_ujIscbruM.png) 
 
 # Visual Words
@@ -98,6 +99,7 @@ Inverted indexes only give a performance gain if the vectors are sparse
 Visual words also need to be sufficiently distinctive to minimise mismatching
 - Large codebooks cause problems as they are non-trivial
 - Implies a very large codebook size
+
 ![|400](https://remnote-user-data.s3.amazonaws.com/cxElqQaN10VcAZKh_dyNO0iT6uGDUz84XeDMwSDngrAoR38M2n2wTdk1iL5GRMRB40kcEn9n9cKrT7KVKb3xAsEiPAYZtufcRxidm6XWxfWMoaORvjx62zFqzwArZZ4k.png) 
 ## BoVW Retrieval
 With the visual word representation, everything used for text retrieval can be applied directly to images
