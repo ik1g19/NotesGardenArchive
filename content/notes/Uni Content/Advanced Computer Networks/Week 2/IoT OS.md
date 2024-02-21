@@ -1,22 +1,27 @@
 ---
 title: "IoT OS"
 ---
+# Concepts
 
+- [[Zephyr]]
+- [[Riot-OS]]
+- [[Contiki-NG]]
+
+---
 # **Reasons to use an OS**
 - Device independence
 - Services
 	- Timers
 	- Threads
 - An OS provides drivers, networking and HAL 
-	- HAL↔Hardware Abstraction Layer
-- ! 
+	- HAL - Hardware Abstraction Layer
 # **Example OS'**
 - Zephyr 
 - Riot-OS
 - Mbed
 - OpenWSN
 - tinyOS (old)
-- Contiki ⇒ Contiki-NG
+- Contiki - Contiki-NG
 - FreeRTOS
 - LiteOS
 - Arduino
@@ -42,7 +47,7 @@ title: "IoT OS"
 # **Riot-OS**
 - Medium sized open source project
 - Low memory footprint
-	- ~3kB RAM #3kB Flash
+	- ~3kB RAM \#3kB Flash
 - Internet standards
 - C or C++
 - Can develop on Linux to start with
@@ -50,15 +55,6 @@ title: "IoT OS"
 - Deterministic scheduling
 - Low latency interrupts
 - Supports >100 boards
-- RIOT Structure
-	- ! 
-# **Hello World**
-- TinyOS
-	- ! 
-- Contiki
-	- ! 
-- RIOT
-	- ! 
 # **Contiki-NG**
 - Original Contiki was in use before RIOT
 - Contiki-NG inherits lots of code/capabilities
@@ -70,7 +66,7 @@ title: "IoT OS"
 	- By being minimal and transactional
 	- Small
 - Uses Snaps rather than debian packages
-	- Snaps↔Signed sandboxed packages
+	- Snaps - Signed sandboxed packages
 - Used in commercial devices
 	- Screenly
 	- Nextcloud
