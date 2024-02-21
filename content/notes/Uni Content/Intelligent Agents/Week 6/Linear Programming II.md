@@ -3,7 +3,9 @@ title: "Linear Programming II"
 ---
 
 # Computing the Nash Equilibrium of a two-player zero-sum Game
-![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221122180841.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221122180841.png]]
+
 **Zero-Sum** - Utilities add up to 0
 Expected utility for player 1 will be:
 - If player 2 picks 'Security' -> $3x-2(1-x)$
@@ -25,6 +27,7 @@ Solution $z=\frac{1}{7}$ and $x=\frac{3}{7}$
 - Player 1 plays Economy with probability $\frac{3}{7}$ and plays Student Fees with probability $\frac{4}{7}$
 
 ## Computing Player 2's Strategy in NE
+
 Expected utility for player 2 will be:
 - If player 2 picks 'Economy' -> $-3y+(1-y)$
 - If player 2 picks 'Student Fees' -> $2y-(1-y)$
@@ -50,7 +53,8 @@ If Player 2 plays Security with probability $y=\frac{2}{7}$ and plays Tax Cuts w
 - The expected utility of Player 2 is at least $w=-\frac{1}{7}$
 The sum of these two minimum expected utilities is $0$
 
-# Strucutre of Linear Programs
+# Structure of Linear Programs
+
 The constraints in a Linear Program describe a **convex polytope** in n-dimensional space
 The convex polytope corresponds to the **feasible region** that consists of all feasible solutions
 The objective function will attain its minimum/maximum at a **vertex** of the polytope
@@ -58,13 +62,13 @@ If the set of constraints is infeasible, the linear program has no solutions
 A linear program is unbounded if it has some feasible solutions but does not have a finite optimal objective value
 
 ## Unique Solutions
-![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221124142038.png)
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221124142038.png]]
 
 ## Multiple Solutions
-![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221124142102.png)
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221124142102.png]]
 
 ## Unbounded Solutions
-![|450](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221124142125.png)
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221124142125.png]]
 
 ## Standard vs Slack Linear Programs
 ### Standard Form

@@ -76,9 +76,11 @@ The utiity is given by $$u_i(\theta_i)=\biggr\{
 \end{array}$$
 The expected utility given by bid $b_i$ is then $$E[u_i(\theta_i)|b_i]=(\theta_i-b_i)F(b_i)$$
 ## Exercise: Discrete Bids
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221207180005.png|450]]
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221207180005.png|450]]
 ## Solution
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221207180031.png|450]]
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221207180031.png|450]]
 ## Optimal Bid for Continuous Bid Distributions
 Using the equations from [[#First-Price Auction]]
 
@@ -96,9 +98,11 @@ Let $f(b)=F(b+1)-F(b)$ denote the probability that the highest opponent bid is e
 The expected utility given bid $b_i$ is then: $$E[u_i(\theta_i)|b_i]=\theta_iF(b_i)-\sum\limits_{b=0}^{b_i-1}b\cdot f(b)$$
 According to our tie breaking rule $i$ loses if tied with the highest opponent bid, to compute the expected payment we have to consider only cases where the highest opponent bid is at most $b_i-1$
 ## Exercise: Discrete Bids
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208133946.png|450]]
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208133946.png|450]]
 ## Solution
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208134018.png|450]]
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208134018.png|450]]
 ## Continuous Bids
 Using the equations from [[#Vickrey Auction]]
 For continuous distributions, $f$ is the probability density, and we replace the sum by the integral.
@@ -113,6 +117,7 @@ The optimal bid is given by: $$\frac{dE[u_i(\theta_i)]}{db_i}=0\leftrightarrow \
 > Note that $s(\theta_i)=\theta_i$ is always an optimal outcome (second derivative is negative)
 
 ## Strategy Proofness
+
 > [!Definition]
 > A strategy is weakly dominant if, regardless of what any other players do, the strategy earns a player a utility at least as high as any other strategy
 
@@ -123,8 +128,9 @@ Such an auction is called
 - Incentive-compatible in dominant strategies
 
 ### Proof
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208143548.png|450]]
-![[content/notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208143614.png|450]]
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208143548.png|450]]
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221208143614.png|450]]
 
 # Dutch Auction
 Here strategy $s(\theta_i)$ is the point at which you bid when the clock reaches the vlaue $s(\theta_i)$

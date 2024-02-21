@@ -13,7 +13,7 @@ Capable of independent action without need for constant intervention
 #### delegation
 Acts on behalf of its user or owner
 
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221007150609.png)
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221007150609.png]]
 
 An agent **perceives** the environment through {sensors}
 An agent **acts** on the environment through {actuators}

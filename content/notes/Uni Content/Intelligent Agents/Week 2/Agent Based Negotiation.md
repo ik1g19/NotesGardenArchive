@@ -39,8 +39,8 @@ Used for group based decisions (**social chocice**)
 Governed by a protocol which defines the Rules of Encounter between the agents
 
 {More flexible} compared to other approaches
-- Prtocol typically involves {exchanging offers, but can also include other information such as arguments (reasons why)}
-- Allows for {less structured} prtocols
+- Protocol typically involves {exchanging offers, but can also include other information such as arguments (reasons why)}
+- Allows for {less structured} protocols
 - Often Bilateral, but some protocols support Multi-Part Negotiation
 
 Enables more complex types of agreements (multi-issue negotiation)
@@ -51,7 +51,7 @@ Between two agents
 ##### Multi-Party Negotiation
 Between more than two agents
 
-#### rules of encounter
+#### Rules of Encounter
 - Type of communication allowed
 - Type of proposals that are allowed
 - Who can make what proposal at what time
@@ -87,7 +87,7 @@ The preferences over all possible agreements (and disagreements), typically spec
 - Divide and Choose
 
 ### Single-Issue Negotiation
-![|600](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221010165240.png)
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221010165240.png]]
 Overlap between sellers minimum price and buyers maximum price is the agreement space
 
 ### Bilateral Negotiation: The Ultimatum Game
@@ -107,7 +107,8 @@ Overlap between sellers minimum price and buyers maximum price is the agreement 
 - First player starts with proposing an offer
 - Second player can either accept or reject and counter offer, or reject and break off negotiation
 - Negotiation ends after set number of rounds (deadline) or if either players breaks off negotiations
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221010173339.png)
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221010173339.png]]
 
 ### Monotonic Concession Protocol
 - Negotiations proceed in rounds
@@ -121,7 +122,8 @@ Overlap between sellers minimum price and buyers maximum price is the agreement 
 - Used when a continuous resource needs to be divided between multiple agents
 - Agent 1 divides the pie into 2 portions
 - Agent 2 chooses one of the portions
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014124749.png)
+
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221014124749.png]]
 
 #### Properties
 - Only works for resource allocation problems
@@ -150,7 +152,7 @@ We can always infer ordinal preferences from cardinal ones
 
 ## Price Negotiation: Utility Space
 The utility space shows the utility of the two agents on respective axis for all possible outcomes
-![](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014132155.png)
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221014132155.png]]
 
 ## Time Pressure
 
@@ -181,7 +183,7 @@ An agreement is said to be Pareto efficient (Pareto optimal) if no further impro
 
 **Pareto Efficient Frontier** - Set of all Pareto efficient agreements
 
-![|500](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014135629.png)
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221014135629.png]]
 
 ## Desriable Properties
 - Agreements should be individually rational - $U(o)>U(disagreement)$
@@ -246,7 +248,7 @@ $F(0)=0$ and $F(T_{\max})=1$
 ##### Conceder ($\beta > 1$)
 - Concedes to the reservation value very quickly
 
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020221014153655.png)
+![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20221014153655.png]]
 #### Tit-for-tat
 The agent detects the concession the opponent makes during the previous negotiation round, in terms of increase in its own utility function
 The concession the agent makes in the next round is equal to (or less than) the concession made by the opponent in the previous round $$concession\leq U_{own}(o_{opponent}^t)-U_{own}(o_{opponent}^{t-1})$$

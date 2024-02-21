@@ -29,8 +29,10 @@ Given preference ordering $[\succ]$ and social welfare function $f$, $f([\succ])
 # Voting Procedures
 ## Plurality Vote
 Every candidate gets one point for every preference order that ranks them first
-![|200](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113175533.png)
-![|100](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113175607.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113175533.png]]
+ 
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113175607.png]]
 ### The Condorcet Paradox
 *Condorcet's paradox* tells us that there are scenarios in which no matter which outcome we choose, a majority of voters will be unhappy
 ### The Condorcet Criterion
@@ -39,19 +41,24 @@ A Condorcet winner does not always exist
 A voting system satisfies the *Condorcet criterion*, if it always chooses a Condorcet winner when one exists
 Rules satisfying this property are called *Condorcet methods* and are said to be *Condorcet consistent*
 #### Example
-![|200](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113180402.png)
-![|200](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113180419.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113180402.png]]
+ 
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113180419.png]]
 ## Copeland Method
 Each candidate is scored based on its pairwise victories minus its pairwise losses
 This method is Condorcet consistent
 
 The Copeland method also works when there is no Condorcet winner
 #### Example
-![|200](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113181740.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113181740.png]]
+ 
 Wine wins twice, Beer has 1 win, Milk always loses
 
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113182313.png)
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113182333.png)
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113182313.png]]
+ 
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113182333.png]]
 There is no Condorcet winner, but A is a Copeland winner
 ## Borda Count
 The Borda Count takes into account all the information from a preference order
@@ -60,9 +67,11 @@ Borda count:
 - The candidate with the most points wins
 
 The Borda count is not a Condorcet method
-![|300](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113185557.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113185557.png]]
 #### Example
-![|200](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230113185413.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230113185413.png]]
 Beer gets 30 points, Wine gets 31 points, Milk gets 29 points
 
 # Social Welfare Functions
@@ -76,7 +85,8 @@ A social welfare function is independent of irrelevant alternatives, if whether 
 >A social welfare function is IIA if the outcome only depends on the relative orderings of candidates
 >i.e. if $A$ $\succ$ $B$ then the outcome won't change so long as $A$ is always ordered somewhere above $B$
 #### Example
-![|400](content/notes/Uni%20Content/Intelligent%20Agents/Images/Pasted%20image%2020230114173700.png)
+
+ ![[notes/Uni Content/Intelligent Agents/Images/Pasted image 20230114173700.png]]
 ### Nondictatorship
 A social welfare function is nondictatorial whenever there is no voter $i$ such that for all $\omega$, $\omega'$, if $\omega\succ_i\omega'$ then $\omega\succ^*\omega'$
 ## Arrow's Theorem
