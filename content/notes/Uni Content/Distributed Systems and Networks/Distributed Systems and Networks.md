@@ -4,10 +4,14 @@ title: "Distributed Systems and Networks"
 
 <iframe src="https://drive.google.com/file/d/1zN8u-GU7YLTQh4FQFCleK08YTu1tre7e/preview" width="640" height="780" allow="autoplay"></iframe>
 
+# Concepts
 
-<iframe src="https://drive.google.com/file/d/1TMTgzaLkpqEScO3RQ4lHxIzoKI3zxYLM/preview" width="640" height="480" allow="autoplay"></iframe>
+- [[TCP]]
+- [[UDP]]
+- [[IPv6]]
+- [[RESTful]]
 
-
+---
 
 # Contents
 
@@ -27,7 +31,7 @@ title: "Distributed Systems and Networks"
 	- P9. Unreliability
 	- P9. IPv4 Packet Header
 	- P9. Fragmentation
-	- P10. Maximsing use of Address Space
+	- P10. Maximising use of Address Space
 	- P10. Subnets
 	- P11. CIDR
 	- P12Cooperative Games. ARP
@@ -75,8 +79,8 @@ title: "Distributed Systems and Networks"
 	- P38. Benefits of IPv6
 	- P38. Dual Stack Systems
 	- P39. Translation Mechanisms
-	- P39. Tunneling
-	- P39Cooperative Games. Dual Stack Lite
+	- P39. Tunnelling
+	- P39 Cooperative Games. Dual Stack Lite
 	- P40. Barriers to Deployment
 - P40. Application Layer Protocols
 	- P40. DHCP

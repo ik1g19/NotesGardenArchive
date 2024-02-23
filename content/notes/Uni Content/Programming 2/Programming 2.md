@@ -5,6 +5,14 @@ title: "Programming 2"
 <iframe src="https://drive.google.com/file/d/1rSpRR5Vt0rd8ye1Wa8V5l5iRgOTQBnlR/preview" width="640" height="780" allow="autoplay"></iframe>
 
 
+# Concepts
+
+- [[GUI]]
+- [[JVM]]
+- [[Heap]]
+
+---
+
 # Contents
 
 - P1. GUIs
@@ -29,7 +37,7 @@ title: "Programming 2"
 		- P50. Thread Priorities
 		- P51. Interrupting Threads
 		- P51. Shared Variable Concurrency
-		- P54. Syncrhonising Code and Methods
+		- P54. Synchronising Code and Methods
 		- P55. Communicating between Threads
 		- P59. Deadlock
 - P61. Software Testing and Unit Testing

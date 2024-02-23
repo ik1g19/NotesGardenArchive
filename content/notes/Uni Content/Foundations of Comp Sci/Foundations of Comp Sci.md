@@ -6,6 +6,12 @@ title: "Foundations of Comp Sci"
 
 <iframe src="https://drive.google.com/file/d/1Li4jiD4QE1MnBID5KSZzVICuES7O0BYQ/preview" width="640" height="780" allow="autoplay"></iframe>
 
+# Concepts
+
+- [[Eigenvector]]
+- [[Eigenvalue]]
+- [[Transforms]]
+
 # Contents
 
 - P1. Sets
@@ -73,7 +79,7 @@ title: "Foundations of Comp Sci"
 	- P97. Linear Independence and Vector Spaces
 	- P101. Eigenvalues and Eigenvectors
 	- P103. The Determinant
-	- P106. Linear Dependenc of Vectors Obtained by Matrix Action
+	- P106. Linear Dependence of Vectors Obtained by Matrix Action
 	- P112. Finding the Eigenvectors and Eigenvalues of a 2x2 Matrix
 	- P116. Eigenvectors and Eigenvalues of a 3x3 Matrix
 	- P122. Inverse Matrices, Column Space and Null Space
